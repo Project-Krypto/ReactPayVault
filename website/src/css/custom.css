@@ -143,6 +143,10 @@ html[data-theme='dark'] {
   --ifm-blockquote-background-color: var(--vault-color-slate-600);
 }
 
+html[data-theme='dark'] footer {
+  background-color: var(--vault-color-slate-600);
+}
+
 /**
  * Because of Tailwind preflight, many Docusaurus styles need to be "fixed".
  */

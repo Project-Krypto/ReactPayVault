@@ -1,17 +1,17 @@
 {
-  "name": "vite-component-library-template",
+  "name": "payvault-react",
   "private": false,
   "url": "https://github.com/Project-Krypto/ReactPayVault",
   "homepage": "https://payvault-docs.vercel.app",
   "description": "Crypto Ecom Payment Processing",
   "version": "1.5.11",
-  "main": "./dist/vite-component-library-template.umd.js",
-  "module": "./dist/vite-component-library-template.es.js",
+  "main": "./dist/payvault-react.umd.js",
+  "module": "./dist/payvault-react.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/vite-component-library-template.es.js",
-      "require": "./dist/vite-component-library-template.umd.js"
+      "import": "./dist/payvault-react.es.js",
+      "require": "./dist/payvault-react.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
   },

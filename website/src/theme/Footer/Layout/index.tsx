@@ -13,8 +13,7 @@ export interface FooterLayoutProps {
 
 export default function FooterLayout({ links, copyright }: FooterLayoutProps) {
   return (
-    // <footer className="bg-gray-100 dark:bg-slate-600" aria-labelledby="footer-heading">
-    <footer className="dark:bg-slate-600" aria-labelledby="footer-heading">
+    <footer className="dark:bg-slate-600" id="footer" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>

@@ -7,6 +7,7 @@
 if (typeof document !== 'undefined') {
   const html = document.documentElement
   const app = document.querySelector('#__docusaurus')!
+  const footer = document.querySelector('#footer')!
 
   // We can't set the class on `html` or `body` as Docusaurus rewrites the classes
   // eslint-disable-next-line no-inner-declarations
