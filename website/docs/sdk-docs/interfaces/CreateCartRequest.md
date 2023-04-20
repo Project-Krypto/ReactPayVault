@@ -14,4 +14,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[pocsdk/PayVault.ts:28](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L28)
+[pocsdk/PayVault.ts:28](https://github.com/Project-Krypto/ReactPayVault/blob/a607b61/src/lib/pocsdk/PayVault.ts#L28)
