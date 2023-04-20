@@ -4,10 +4,15 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github')
 const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
+// eslint-disable-next-line n/no-unpublished-require
+const packageJson = require('../package.json')
+const prismTheme = require('./prism.config')
+const { RepoUrl, RepoName, OrgName } = require('./constants')
+
 const social = [
   {
     label: 'GitHub',
-    to: 'https://github.com/payvault',
+    to: RepoUrl,
   },
   {
     label: 'Discord',
@@ -18,10 +23,6 @@ const social = [
     to: 'https://twitter.com/payvault',
   },
 ]
-
-// eslint-disable-next-line n/no-unpublished-require
-const packageJson = require('../package.json')
-const prismTheme = require('./prism.config')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -42,8 +43,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'ProjectKrypto', // Usually your GitHub org/user name.
-  projectName: 'ReactPayVault', // Usually your repo name.
+  organizationName: OrgName, // Usually your GitHub org/user name.
+  projectName: RepoName, // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -139,7 +140,7 @@ const config = {
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: RepoUrl,
             label: 'GitHub',
             position: 'right',
           },
@@ -170,12 +171,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: RepoUrl,
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc.`,
       },
       prism: {
         theme: prismTheme,

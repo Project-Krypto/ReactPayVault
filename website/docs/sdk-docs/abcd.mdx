@@ -1,0 +1,899 @@
+---
+title: vault.yml
+toc_max_heading_level: 6
+---
+
+import HeadingApiLink from '@site/src/components/Docs/HeadingApiLink';
+import RequiredLabel from '@site/src/components/Docs/RequiredLabel';
+
+The `vault.yml` configuration file _is not required_ but can be used to define additional metadata
+for a project, override inherited tasks, and more at the project-level. When used, this file must
+exist in a project's root, as configured in [`projects`](../tutorial-basics/markdown-features).
+
+```yaml title="vault.yml"
+$schema: 'https://vaultrepo.dev/schemas/project.json'
+```
+
+## `dependsOn`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+Explicitly defines _other_ projects that _this_ project depends on, primarily when generating the
+project and task graphs. The most common use case for this is building those projects _before_
+building this one. When defined, this setting requires an array of project names, which are the keys
+found in the [`projects`](../tutorial-basics/markdown-features) map.
+
+```yaml title="vault.yml"
+dependsOn:
+  - 'apiClients'
+  - 'designSystem'
+```
+
+A dependency object can also be defined, where a specific `scope` can be assigned, which accepts
+"production" (default), "development", or "peer".
+
+```yaml title="vault.yml"
+dependsOn:
+  - id: 'apiClients'
+    scope: 'production'
+  - id: 'designSystem'
+    scope: 'peer'
+```
+
+> Learn more about [implicit and explicit dependencies](../tutorial-basics/markdown-features).
+
+## Metadata
+
+## `language`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The primary programming language the project is written in. This setting is required for
+[task inheritance](../tutorial-basics/markdown-features), editor extensions, and more. Supports the following values:
+
+- `bash` - A [Bash](<https://en.wikipedia.org/wiki/Bash_(Unix_shell)>) based project (Unix only).
+- `batch` - A [Batch](https://en.wikibooks.org/wiki/Windows_Batch_Scripting)/PowerShell based
+  project (Windows only).
+- `go` - A [Go](https://go.dev/) based project.
+- `javascript` - A [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) based
+  project.
+- `php` - A [PHP](https://www.php.net) based project.
+- `python` - A [Python](https://www.python.org/) based project.
+- `ruby` - A [Ruby](https://www.ruby-lang.org/en/) based project.
+- `rust` - A [Rust](https://www.rust-lang.org/) based project.
+- `typescript` - A [TypeScript](https://www.typescriptlang.org/) based project.
+- `unknown` (default) - When not configured or inferred.
+- `*` - A custom language. Values will be converted to kebab-case.
+
+```yaml title="vault.yml"
+language: 'javascript'
+
+# Custom
+language: 'kotlin'
+```
+
+> For convenience, when this setting is not defined, vault will attempt to detect the language based
+> on configuration files found in the project root. This only applies to non-custom languages!
+
+## `project`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The `project` setting defines metadata about the project itself.
+
+```yaml title="vault.yml"
+project:
+  name: 'vault'
+  description: 'A monorepo management tool.'
+  channel: '#vault'
+  owner: 'infra.platform'
+  maintainers: ['miles.johnson']
+```
+
+The information listed within `project` is purely informational and primarily displayed within the
+CLI. However, this setting exists for you, your team, and your company, as a means to identify and
+organize all projects. Feel free to build your own tooling around these settings!
+
+### `channel`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The Slack, Discord, Teams, IRC, etc channel name (with leading #) in which to discuss the project.
+
+### `description`<RequiredLabel />
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+A description of what the project does and aims to achieve. Be as descriptive as possible, as this
+is the kind of information search engines would index on.
+
+### `maintainers`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+A list of people/developers that maintain the project, review code changes, and can provide support.
+Can be a name, email, LDAP name, GitHub username, etc, the choice is yours.
+
+### `name`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+A human readable name of the project. This is _different_ from the unique project name configured in
+[`projects`](../tutorial-basics/markdown-features).
+
+### `owner`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The team or organization that owns the project. Can be a title, LDAP name, GitHub team, etc. We
+suggest _not_ listing people/developers as the owner, use [maintainers](#maintainers) instead.
+
+## `tags`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+Tags are a simple mechanism for categorizing projects. They can be used to group projects together
+for [easier querying](../tutorial-basics/markdown-features), enforcing of
+[project boundaries and constraints](../tutorial-basics/markdown-features),
+[task inheritance](../tutorial-basics/markdown-features), and more.
+
+```yaml title="vault.yml"
+tags:
+  - 'react'
+  - 'prisma'
+```
+
+## `type`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The type of project. Supports the following values:
+
+- `application` - A backend, frontend, or CLI application.
+- `library` - A self-contained, shareable, and publishable set of code.
+- `tool` - An internal tool, one-off script, etc.
+- `unknown` (default) - When not configured.
+
+```yaml title="vault.yml"
+type: 'application'
+```
+
+> Project type is used in task inheritance, constraints and boundaries, editor extensions, and more!
+
+## Tasks
+
+## `env`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The `env` field is map of strings that are passed as environment variables to _all tasks_ within the
+current project. Project-level variables will not override task-level variables of the same name.
+
+```yaml title="vault.yml" {1,2}
+env:
+  NODE_ENV: 'production'
+```
+
+> View the task [`env`](#env-1) setting for more usage examples and information.
+
+## `fileGroups`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+Defines [file groups](../tutorial-basics/markdown-features) to be used by local tasks. By default, this setting
+_is not required_ for the following reasons:
+
+- File groups are an optional feature, and are designed for advanced use cases.
+- File groups defined in [`.vault/tasks.yml`](../tutorial-basics/markdown-features) will be inherited by all projects.
+
+When defined this setting requires a map, where the key is the file group name, and the value is a
+list of [globs or paths](../tutorial-basics/markdown-features). Globs and paths are
+[relative to a project](../tutorial-basics/markdown-features) (even when defined
+[globally](../tutorial-basics/markdown-features).
+
+```yaml title="vault.yml"
+fileGroups:
+  configs:
+    - '*.config.{js,cjs,mjs}'
+    - '*.json'
+  sources:
+    - 'src/**/*'
+    - 'types/**/*'
+  tests:
+    - 'tests/**/*'
+    - '**/__tests__/**/*'
+  assets:
+    - 'assets/**/*'
+    - 'images/**/*'
+    - 'static/**/*'
+    - '**/*.{scss,css}'
+```
+
+> The code snippet above is merely an example of file groups. Feel free to use those groups as-is,
+> modify the glob lists, add and remove groups, or implement completely new groups. The choice is
+> yours!
+
+## `platform`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The default [`platform`](#platform-1) for all task's within the current project. When a task's
+`platform` has _not been_ explicitly configured, the platform will fallback to this configured
+value, otherwise the platform will be detected from the project's environment.
+
+```yaml title="vault.yml"
+platform: 'node'
+```
+
+## `tasks`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+Tasks are actions that are ran within the context of a [project](../tutorial-basics/markdown-features), and commonly
+wrap an npm binary or system command. This setting requires a map, where the key is a unique name
+for the task, and the value is an object of task parameters.
+
+```yaml title="vault.yml"
+tasks:
+  format:
+    command: 'prettier'
+  lint:
+    command: 'eslint'
+  test:
+    command: 'jest'
+  typecheck:
+    command: 'tsc'
+```
+
+### `command`<RequiredLabel />
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The `command` field is the command line to run for the task, including the command name (must be
+first) and any optional [arguments](#args). This field is required when _not_ inheriting a global
+task of the same name.
+
+```yaml title="vault.yml" {3}
+tasks:
+  format:
+    # Using a string
+    command: 'prettier --check .'
+    # Using an array
+    command:
+      - 'prettier'
+      - '--check'
+      - '.'
+```
+
+By default a task assumes the command name is an npm binary, and if you'd like to reference a system
+command, you'll also need to set the [`platform`](#platform) to "system". We do our best to
+automatically detect this, but it's not accurate in all scenarios.
+
+```yaml title="vault.yml"
+tasks:
+  clean:
+    command: 'rm -rf ./dist'
+    platform: 'system'
+```
+
+#### Special commands
+
+For interoperability reasons, the following command names have special handling.
+
+- `noop`, `no-op`, `nop` - Marks the task as a "no operation". Will not execute a command in the
+  action pipeline but can define dependencies.
+- When `platform` is "deno":
+  - Will execute with `deno` binary.
+- When `platform` is "node":
+  - `node`, `npm`, `pnpm`, `yarn` - Uses the binaries from the toolchain.
+
+### `args`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The `args` field is a collection of _additional_ arguments to pass to the command line when
+executing the task. This field exists purely to provide arguments for
+[inherited tasks](../tutorial-basics/markdown-features).
+
+This setting can be defined using a string, or an array of strings. We suggest using arrays when
+dealing with many args, or the args string cannot be parsed easily.
+
+```yaml title="vault.yml" {4,5}
+tasks:
+  test:
+    command: 'jest'
+    # Using a string
+    args: '--color --maxWorkers 3'
+    # Using an array
+    args:
+      - '--color'
+      - '--maxWorkers'
+      - '3'
+```
+
+However, for the array approach to work correctly, each argument _must_ be its own distinct item,
+including argument values. For example:
+
+```yaml title="vault.yml"
+tasks:
+  test:
+    command: 'jest'
+    args:
+      # Valid
+      - '--maxWorkers'
+      - '3'
+      # Also valid
+      - '--maxWorkers=3'
+      # Invalid
+      - '--maxWorkers 3'
+```
+
+### `deps`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The `deps` field is a list of other tasks (known as [targets](../tutorial-basics/markdown-features), either within
+this project or found in another project, that will be executed _before_ this task. It achieves this
+by generating a directed task graph based on the project graph.
+
+```yaml title="vault.yml" {4-6}
+tasks:
+  build:
+    command: 'webpack'
+    deps:
+      - 'apiClients:build'
+      - 'designSystem:build'
+      # A task within the current project
+      - 'codegen'
+```
+
+### `env`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The `env` field is map of strings that are passed as environment variables when running the command.
+Variables defined here will take precedence over those loaded with [`envFile`](#envfile).
+
+```yaml title="vault.yml" {4,5}
+tasks:
+  build:
+    command: 'webpack'
+    env:
+      NODE_ENV: 'production'
+```
+
+Variables also support substitution using the syntax `${VAR_NAME}`. When using substitution, only
+variables in the current process can be referenced, and not those currently defined in `env`.
+
+```yaml title="vault.yml" {4,5}
+tasks:
+  build:
+    command: 'webpack'
+    env:
+      APP_TARGET: '${REGION}-${ENVIRONMENT}'
+```
+
+### `inputs`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The `inputs` field is a list of sources that calculate whether to execute this task based on the
+environment and files that have been touched since the last time the task has been ran. If _not_
+defined or inherited, then all files within a project are considered an input (`**/*`).
+
+Inputs support the following source types:
+
+- Environment variables (must start with a `$`)
+- Files, folders, globs
+  ([project and workspace relative file patterns](../tutorial-basics/markdown-features)
+
+```yaml title="vault.yml" {4-10}
+tasks:
+  lint:
+    command: 'eslint'
+    inputs:
+      # Config files anywhere within the project
+      - '**/.eslintignore'
+      - '**/.eslintrc.js'
+      # Config files at the workspace root
+      - '/.eslintignore'
+      - '/.eslintrc.js'
+      # Environment variables
+      - '$ESLINT_CACHE'
+```
+
+:::caution
+
+When using an environment variable, we assume _it's not defined_ by default, and will trigger an
+affected state when it _is_ defined. If the environment variable always exists, then the task will
+always run and bypass the cache.
+
+:::
+
+:::danger
+
+When using globs, be aware that files that match the glob, but are ignored via `.gitignore` (or
+similar), will _not_ be considered an input. To work around this, use explicit file inputs.
+
+:::
+
+### `local`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+Marks the task as local only. This should primarily be enabled for long-running or never-ending
+tasks, like development servers and watch mode. Defaults to `true` if the task name is "dev",
+"start", or "serve", and `false` otherwise.
+
+This is a convenience setting for local development that sets the following task options:
+
+- [`cache`](#cache) -> Turned off
+- [`outputStyle`](#outputstyle) -> Set to "stream"
+- [`runInCI`](#runinci) -> Turned off
+
+```yaml title="vault.yml" {5}
+tasks:
+  dev:
+    command: 'webpack server'
+    local: true
+```
+
+### `outputs`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The `outputs` field is a list of files and folders (using
+[project relative file patterns](../tutorial-basics/markdown-features) that are _created_ as a
+result of executing this task, typically from a build or compilation related task. Outputs are
+necessary for [incremental caching and hydration](../tutorial-basics/markdown-features). If you'd prefer to avoid that
+functionality, omit this field.
+
+```yaml title="vault.yml" {4-6}
+tasks:
+  build:
+    command: 'webpack'
+    outputs:
+      # Relative from project root
+      - 'build/'
+```
+
+Globs can also be used if you'd like to restrict which files are cached. For example, when building
+a JavaScript project, you may want to include `.js` files, but exclude `.map` and other files.
+
+```yaml title="vault.yml" {4,5}
+tasks:
+  build:
+    command: 'webpack'
+    outputs:
+      - 'build/**/*.js'
+```
+
+:::caution
+
+When using globs and vault hydrates an output (a cache hit), all files not matching the glob will be
+**deleted**. Ensure that all files critical for the build to function correctly are included.
+
+:::
+
+### `platform`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The `platform` field defines the platform (language runtime) the command runs on, where to locate
+its executable, and which tool to execute it with. By default vault will set to a value based on the
+project's [`language`](#language) or default [`platform`](#platform).
+
+- `deno` - Command is executed with Deno.
+- `node` - Command is a binary within `node_modules` and will be executed with Node.js.
+- `system` - Command is expected to exist within the system's environment / user's shell.
+- `unknown` - When not configured or inferred.
+
+```yaml title="vault.yml" {4}
+tasks:
+  env:
+    command: 'printenv'
+    platform: 'system'
+```
+
+> This field exists because of our [toolchain](../tutorial-basics/markdown-features), and vault ensuring the correct
+> command is ran.
+
+### `options`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The `options` field is an object of configurable options that can be used to modify the task and its
+execution. The following fields can be provided, with merge related fields supporting all
+[merge strategies](../tutorial-basics/markdown-features).
+
+```yaml title="vault.yml" {6-8}
+tasks:
+  typecheck:
+    command: 'tsc --noEmit'
+    options:
+      mergeArgs: 'replace'
+      runFromWorkspaceRoot: true
+```
+
+#### `affectedFiles`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+When enabled and the [`--affected` option](../tutorial-basics/markdown-features) is
+provided, all affected files that match this task's [`inputs`](#inputs) will be passed as relative
+file paths as command line arguments, and as a `vault_AFFECTED_FILES` environment variable. If there
+are no affected files, `.` (current directory) will be passed instead for arguments, and an empty
+value for the environment variable.
+
+```yaml title="vault.yml" {6}
+tasks:
+  lint:
+    command: 'eslint'
+    options:
+      affectedFiles: true
+      # Only pass args
+      affectedFiles: 'args'
+      # Only set env var
+      affectedFiles: 'env'
+```
+
+:::caution
+
+When using this option, ensure that explicit files or `.` _are not present_ in the [`args`](#args)
+list. Furthermore, this functionality will only work if the task's command supports an arbitrary
+list of files being passed as arguments.
+
+:::
+
+#### `cache`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+Whether to cache the task's execution result using our [smart hashing](../tutorial-basics/markdown-features)
+system. If disabled, _will not_ create a cache hash, and _will not_ persist a task's
+[outputs](#outputs). Defaults to `true`.
+
+We suggest disabling caching when defining cleanup tasks, one-off scripts, or file system heavy
+operations.
+
+```yaml title="vault.yml" {6}
+tasks:
+  clean:
+    command: 'rm -rf ./temp'
+    options:
+      cache: false
+```
+
+#### `envFile`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+A boolean or path to a `.env` file (also know as dotenv file) that defines a collection of
+[environment variables](#env-1) for the current task. Variables will be loaded on project creation,
+but will _not_ override those defined in [`env`](#env-1).
+
+Variables defined in the file support value substitution/expansion by wrapping the variable name in
+curly brackets, such as `${VAR_NAME}`.
+
+```yaml title="vault.yml" {6}
+tasks:
+  build:
+    command: 'webpack'
+    options:
+      # Defaults to .env
+      envFile: true
+      # Or
+      envFile: '.env.production'
+      # Or from the workspace root
+      envFile: '/.env.shared'
+```
+
+:::caution
+
+File parsing is done using the Rust [`dotenvy`](https://crates.io/crates/dotenvy) crate, which is
+_different_ than the Node.js [`dotenv`](https://www.npmjs.com/package/dotenv) package. The biggest
+differences are around quote handling and variable substitution, so be aware of this!
+
+:::
+
+#### `mergeArgs`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The [strategy](../tutorial-basics/markdown-features) list with
+an inherited task. Defaults to "append".
+
+#### `mergeDeps`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The [strategy](../tutorial-basics/markdown-features) list with
+an inherited task. Defaults to "append".
+
+#### `mergeEnv`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The [strategy](../tutorial-basics/markdown-features) map with
+an inherited task. Defaults to "append".
+
+#### `mergeInputs`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The [strategy](../tutorial-basics/markdown-features) list
+with an inherited task. Defaults to "append".
+
+#### `mergeOutputs`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The [strategy](../tutorial-basics/markdown-features) list
+with an inherited task. Defaults to "append".
+
+#### `outputStyle`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+Controls how stdout/stderr is displayed when the task is ran as a _transitive target_. By default,
+this setting is not defined and defers to the action pipeline, but can be overridden with one of the
+following values:
+
+- `buffer` - Buffers output and displays after the task has exited (either success or failure).
+- `buffer-only-failure` - Like `buffer`, but only displays on failures.
+
+- `hash` - Ignores output and only displays the generated [hash](../tutorial-basics/markdown-features).
+
+- `none` - Ignores output.
+- `stream` - Streams output directly to the terminal. Will prefix each line of output with the
+  target.
+
+```yaml title="vault.yml" {5}
+tasks:
+  test:
+    # ...
+    options:
+      outputStyle: 'stream'
+```
+
+#### `retryCount`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+The number of attempts the task will retry execution before returning a failure. This is especially
+useful for flaky tasks. Defaults to `0`.
+
+```yaml title="vault.yml" {5}
+tasks:
+  test:
+    # ...
+    options:
+      retryCount: 3
+```
+
+#### `runDepsInParallel`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+Whether to run the task's [`deps`](#deps) in parallel or serial (in order). Defaults to `true`.
+
+```yaml title="vault.yml" {8}
+tasks:
+  start:
+    # ...
+    deps:
+      - '~:clean'
+      - '~:build'
+    options:
+      runDepsInParallel: false
+```
+
+#### `runInCI`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+Whether to run the task automatically in a CI (continuous integration) environment when affected by
+touched files, typically through the [`vault ci`](../tutorial-basics/markdown-features) command. Defaults to `true` unless
+the [`local`](#local) setting is disabled, but is _always_ true when a task defines
+[`outputs`](#outputs).
+
+```yaml title="vault.yml" {5}
+tasks:
+  build:
+    # ...
+    options:
+      runInCI: false
+```
+
+#### `runFromWorkspaceRoot`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+Whether to use the workspace root as the working directory when executing a task. Defaults to
+`false` and runs from the task's project root.
+
+```yaml title="vault.yml" {5}
+tasks:
+  typecheck:
+    # ...
+    options:
+      runFromWorkspaceRoot: true
+```
+
+#### `shell`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+For [system tasks](#platform-1), whether to run the command within a shell or not. Defaults to
+`true`.
+
+- On Unix, will derive the shell from the `SHELL` environment variable, or default to `/bin/sh`. The
+  shell will be ran using the `-c` option.
+- On Windows, will use `pwsh.exe` or `powershell.exe`. The shell will be ran using the `-Command`
+  option, coupled with `-`, so that args are passed via stdin.
+
+```yaml title="vault.yml" {3-5}
+tasks:
+  native:
+    command: 'echo $SHELL'
+    options:
+      shell: true
+```
+
+If you'd like to use a different shell, or customize the shell's arguments, you can set `shell` to
+false and configure a fully qualified command.
+
+```yaml title="vault.yml" {3-5}
+tasks:
+  native:
+    command: '/bin/zsh -c "echo $SHELL"'
+    options:
+      shell: false
+```
+
+## Overrides
+
+Dictates how a project interacts with settings defined at the top-level.
+
+## `toolchain`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+### `node`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+Configures Node.js for this project and overrides the top-level [`node`](../tutorial-basics/markdown-features) setting.
+Currently, only the Node.js version can be overridden per-project, not the package manager.
+
+#### `version`
+
+Defines the explicit Node.js version to use when _running tasks_ for this project.
+
+```yaml title="vault.yml" {2,3}
+toolchain:
+  node:
+    version: '12.12.0'
+```
+
+### `typescript`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+#### `disabled`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+Disables [TypeScript support](../tutorial-basics/markdown-features) entirely for this project. Defaults to
+`false`.
+
+```yaml title="vault.yml" {2}
+toolchain:
+  typescript:
+    disabled: true
+```
+
+#### `routeOutDirToCache`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+Overrides the workspace-level [`routeOutDirToCache`](../tutorial-basics/markdown-features) setting.
+Defaults to undefined.
+
+```yaml title="vault.yml" {2}
+toolchain:
+  typescript:
+    routeOutDirToCache: false
+```
+
+#### `syncProjectReferences`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+Overrides the workspace-level [`syncProjectReferences`](../tutorial-basics/markdown-features) setting.
+Defaults to undefined.
+
+```yaml title="vault.yml" {2}
+toolchain:
+  typescript:
+    syncProjectReferences: false
+```
+
+#### `syncProjectReferencesToPaths`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+Overrides the workspace-level
+[`syncProjectReferencesToPaths`](../tutorial-basics/markdown-features) setting. Defaults to
+undefined.
+
+```yaml title="vault.yml" {2}
+toolchain:
+  typescript:
+    syncProjectReferencesToPaths: false
+```
+
+## `workspace`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+### `inheritedTasks`
+
+<HeadingApiLink to="/docs/sdk-docs/abcd#metadata" />
+
+Provides a layer of control when inheriting tasks from [`.vault/tasks.yml`](../tutorial-basics/markdown-features).
+
+#### `exclude`
+
+The optional `exclude` setting permits a project to exclude specific tasks from being inherited. It
+accepts a list of strings, where each string is the name of a global task to exclude.
+
+```yaml title="vault.yml" {4}
+workspace:
+  inheritedTasks:
+    # Exclude the inherited `test` task for this project
+    exclude: ['test']
+```
+
+> Exclusion is applied after inclusion and before renaming.
+
+#### `include`
+
+The optional `include` setting permits a project to _only_ include specific inherited tasks (works
+like an allow/white list). It accepts a list of strings, where each string is the name of a global
+task to include.
+
+When this field is not defined, the project will inherit all tasks from the global project config.
+
+```yaml title="vault.yml" {4,7-9}
+workspace:
+  inheritedTasks:
+    # Include *no* tasks (works like a full exclude)
+    include: []
+
+    # Only include the `lint` and `test` tasks for this project
+    include:
+      - 'lint'
+      - 'test'
+```
+
+> Inclusion is applied before exclusion and renaming.
+
+#### `rename`
+
+The optional `rename` setting permits a project to rename the inherited task within the current
+project. It accepts a map of strings, where the key is the original name (found in the global
+project config), and the value is the new name to use.
+
+For example, say we have 2 tasks in the global project config called `buildPackage` and
+`buildApplication`, but we only need 1, and since we're an application, we should omit and rename.
+
+```yaml title="vault.yml" {4,5}
+workspace:
+  inheritedTasks:
+    exclude: ['buildPackage']
+    rename:
+      buildApplication: 'build'
+```
+
+> Renaming occurs after inclusion and exclusion.
