@@ -4,8 +4,24 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github')
 const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
+const social = [
+  {
+    label: 'GitHub',
+    to: 'https://github.com/payvault',
+  },
+  {
+    label: 'Discord',
+    to: 'https://discord.gg/payvault',
+  },
+  {
+    label: 'Twitter',
+    to: 'https://twitter.com/payvault',
+  },
+]
+
 // eslint-disable-next-line n/no-unpublished-require
 const packageJson = require('../package.json')
+const prismTheme = require('./prism.config')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -22,6 +38,7 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
+  trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -57,32 +74,20 @@ const config = {
         plugin: ['./plugin/typedoc-plugin-class-fns-to-methods.cjs'],
         readme: 'none',
         excludePrivate: true,
-
-        // externalSymbolLinkMappings: {
-        //   typescript: {
-        //     Promise:
-        //       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise',
-        //     URL: 'https://developer.mozilla.org/en-US/docs/Web/API/URL',
-        //   },
-        //   domhandler: {
-        //     Document: 'https://domhandler.js.org/classes/Document.html',
-        //     Element: 'https://domhandler.js.org/classes/Element.html',
-        //     Node: 'https://domhandler.js.org/classes/Node.html',
-
-        //     AnyNode: 'https://domhandler.js.org/types/AnyNode.html',
-        //     ChildNode: 'https://domhandler.js.org/types/ChildNode.html',
-        //     ParentNode: 'https://domhandler.js.org/types/ParentNode.html',
-
-        //     DomHandlerOptions:
-        //       'https://domhandler.js.org/interfaces/DomHandlerOptions.html',
-        //   },
-        //   parse5: {
-        //     ParserOptions:
-        //       'https://parse5.js.org/interfaces/parse5.ParserOptions.html',
-        //   },
-        // },
       },
     ],
+
+    function tailwind() {
+      return {
+        name: 'docusaurus-tailwindcss',
+        configurePostCss(postcssOptions) {
+          // eslint-disable-next-line import/no-extraneous-dependencies
+          postcssOptions.plugins.push(require('tailwindcss'))
+
+          return postcssOptions
+        },
+      }
+    },
   ],
 
   presets: [
@@ -103,39 +108,20 @@ const config = {
           editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [require.resolve('./src/css/theme.css'), require.resolve('./src/css/custom.css')],
         },
       }),
     ],
-    // [
-    //   'docusaurus-plugin-typedoc-api',
-    //   {
-    //     projectRoot: `${__dirname}/..`,
-    //     changelogs: true,
-    //     readmes: true,
-    //     // sortPackages: (a, b) => {
-    //     //     return packagesOrder.indexOf(a.packageName) - packagesOrder.indexOf(b.packageName);
-    //     // },
-    //     packages: [{ path: `src` }],
-    //     typedocOptions: {
-    //       excludeExternals: false,
-    //     },
-    //   },
-    // ],
-    // [
-    //   'docusaurus-plugin-typedoc',
-
-    //   // Plugin / TypeDoc options
-    //   {
-    //     entryPoints: ['../src/index.ts'],
-    //     tsconfig: '../tsconfig.json',
-    //   },
-    // ],
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        apiKey: '85bc4947855dcc4a3cce9e5353ad8d5f',
+        appId: 'QV1NZLXEBW',
+        indexName: 'payvault',
+      },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
@@ -172,21 +158,8 @@ const config = {
             ],
           },
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
+            title: 'Support',
+            items: social,
           },
           {
             title: 'More',
@@ -205,9 +178,14 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismTheme,
+        darkTheme: prismTheme,
       },
+      // prism: {
+      //   theme: lightCodeTheme,
+      //   darkTheme: darkCodeTheme,
+      // },
+      clientModules: [require.resolve('./plugin/dark-mode-syncer.ts')],
     }),
 }
 

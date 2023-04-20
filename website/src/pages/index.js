@@ -3,6 +3,8 @@ import clsx from 'clsx'
 import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Layout from '@theme/Layout'
+import Button from '@site/src/ui/Button'
+
 import HomepageFeatures from '@site/src/components/HomepageFeatures'
 
 import styles from './index.module.css'
@@ -16,8 +18,21 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" to="/docs/intro">
+            {/* <Link
+            className={clsx(
+              'bg-blurple-400 flex items-center justify-center rounded-md border border-transparent px-2 text-base font-bold text-white dark:bg-purple-600',
+              'hover:bg-blurple-500 cursor-pointer hover:text-white dark:hover:bg-purple-500',
+              'py-2',
+            )}
+            to="/docs/intro"
+          > */}
             Docusaurus Tutorial - 5min ⏱️
           </Link>
+          <Button label="Docusaurus Tutorial - 5min ⏱️" id="contact-next" className="w-1/4">
+            {' '}
+            f
+          </Button>
+          ;
         </div>
       </div>
     </header>

@@ -30,7 +30,7 @@ custom_edit_url: null
 
 #### Defined in
 
-components/atoms/at-button/index.tsx:8
+[components/atoms/at-button/index.tsx:8](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/components/atoms/at-button/index.tsx#L8)
 
 ---
 
@@ -61,7 +61,7 @@ components/atoms/at-button/index.tsx:8
 
 #### Defined in
 
-pocsdk/PayVault.ts:78
+[pocsdk/PayVault.ts:77](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L77)
 
 ---
 
@@ -71,7 +71,7 @@ pocsdk/PayVault.ts:78
 
 #### Defined in
 
-pocsdk/PayVault.ts:97
+[pocsdk/PayVault.ts:96](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L96)
 
 ---
 
@@ -95,7 +95,7 @@ pocsdk/PayVault.ts:97
 
 #### Defined in
 
-pocsdk/PayVault.ts:65
+[pocsdk/PayVault.ts:64](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L64)
 
 ---
 
@@ -115,7 +115,7 @@ pocsdk/PayVault.ts:65
 
 #### Defined in
 
-pocsdk/PayVault.ts:102
+[pocsdk/PayVault.ts:98](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L98)
 
 ## Variables
 
@@ -133,7 +133,7 @@ pocsdk/PayVault.ts:102
 
 #### Defined in
 
-components/atoms/at-button/index.tsx:3
+[components/atoms/at-button/index.tsx:3](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/components/atoms/at-button/index.tsx#L3)
 
 ---
 
@@ -146,7 +146,7 @@ provides default values for the CartContextProps interface.
 
 #### Defined in
 
-pocsdk/hooks/useCart.tsx:64
+[pocsdk/hooks/useCart.tsx:64](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/hooks/useCart.tsx#L64)
 
 ---
 
@@ -156,7 +156,7 @@ pocsdk/hooks/useCart.tsx:64
 
 #### Defined in
 
-pocsdk/hooks/useStore.tsx:16
+[pocsdk/hooks/useStore.tsx:16](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/hooks/useStore.tsx#L16)
 
 ---
 
@@ -166,7 +166,7 @@ pocsdk/hooks/useStore.tsx:16
 
 #### Defined in
 
-components/atoms/at-button/index.tsx:10
+[components/atoms/at-button/index.tsx:10](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/components/atoms/at-button/index.tsx#L10)
 
 ## Functions
 
@@ -186,7 +186,7 @@ components/atoms/at-button/index.tsx:10
 
 #### Defined in
 
-pocsdk/components/AddToCart.tsx:11
+[pocsdk/components/AddToCart.tsx:8](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/components/AddToCart.tsx#L8)
 
 ---
 
@@ -206,7 +206,7 @@ pocsdk/components/AddToCart.tsx:11
 
 #### Defined in
 
-components/atoms/at-button/index.tsx:22
+[components/atoms/at-button/index.tsx:22](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/components/atoms/at-button/index.tsx#L22)
 
 ---
 
@@ -220,7 +220,7 @@ components/atoms/at-button/index.tsx:22
 
 #### Defined in
 
-components/molecules/ml-banner/index.tsx:1
+[components/molecules/ml-banner/index.tsx:1](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/components/molecules/ml-banner/index.tsx#L1)
 
 ---
 
@@ -240,7 +240,7 @@ components/molecules/ml-banner/index.tsx:1
 
 #### Defined in
 
-pocsdk/components/AddToCart.tsx:36
+[pocsdk/components/AddToCart.tsx:30](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/components/AddToCart.tsx#L30)
 
 ---
 
@@ -254,7 +254,7 @@ pocsdk/components/AddToCart.tsx:36
 
 #### Defined in
 
-components/organisms/or-footer/index.tsx:1
+[components/organisms/or-footer/index.tsx:1](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/components/organisms/or-footer/index.tsx#L1)
 
 ---
 
@@ -279,7 +279,7 @@ It accepts children as React nodes and a client as a PayVault instance.
 
 #### Defined in
 
-pocsdk/hooks/useCart.tsx:93
+[pocsdk/hooks/useCart.tsx:93](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/hooks/useCart.tsx#L93)
 
 ---
 
@@ -301,7 +301,7 @@ pocsdk/hooks/useCart.tsx:93
 
 #### Defined in
 
-pocsdk/hooks/useStore.tsx:24
+[pocsdk/hooks/useStore.tsx:24](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/hooks/useStore.tsx#L24)
 
 ---
 
@@ -317,7 +317,7 @@ A custom hook that returns the CartContext.
 
 #### Defined in
 
-pocsdk/hooks/useCart.tsx:84
+[pocsdk/hooks/useCart.tsx:84](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/hooks/useCart.tsx#L84)
 
 ---
 
@@ -331,7 +331,7 @@ pocsdk/hooks/useCart.tsx:84
 
 #### Defined in
 
-pocsdk/hooks/useClient.tsx:4
+[pocsdk/hooks/useClient.tsx:3](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/hooks/useClient.tsx#L3)
 
 ---
 
@@ -366,7 +366,7 @@ pocsdk/hooks/useClient.tsx:4
 
 #### Defined in
 
-pocsdk/hooks/useOneClickCheckout.tsx:6
+[pocsdk/hooks/useOneClickCheckout.tsx:5](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/hooks/useOneClickCheckout.tsx#L5)
 
 ---
 
@@ -387,7 +387,7 @@ pocsdk/hooks/useOneClickCheckout.tsx:6
 
 #### Defined in
 
-pocsdk/hooks/useProducts.tsx:35
+[pocsdk/hooks/useProducts.tsx:34](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/hooks/useProducts.tsx#L34)
 
 ---
 
@@ -408,7 +408,7 @@ pocsdk/hooks/useProducts.tsx:35
 
 #### Defined in
 
-pocsdk/hooks/useProducts.tsx:6
+[pocsdk/hooks/useProducts.tsx:6](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/hooks/useProducts.tsx#L6)
 
 ---
 
@@ -422,4 +422,4 @@ pocsdk/hooks/useProducts.tsx:6
 
 #### Defined in
 
-pocsdk/hooks/useStore.tsx:22
+[pocsdk/hooks/useStore.tsx:22](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/hooks/useStore.tsx#L22)

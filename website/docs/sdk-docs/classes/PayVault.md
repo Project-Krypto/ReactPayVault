@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-pocsdk/PayVault.ts:120
+[pocsdk/PayVault.ts:116](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L116)
 
 ## Properties
 
@@ -30,7 +30,7 @@ pocsdk/PayVault.ts:120
 
 #### Defined in
 
-pocsdk/PayVault.ts:114
+[pocsdk/PayVault.ts:110](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L110)
 
 ---
 
@@ -40,7 +40,7 @@ pocsdk/PayVault.ts:114
 
 #### Defined in
 
-pocsdk/PayVault.ts:115
+[pocsdk/PayVault.ts:111](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L111)
 
 ## Accessors
 
@@ -59,7 +59,7 @@ pocsdk/PayVault.ts:115
 
 #### Defined in
 
-pocsdk/PayVault.ts:132
+[pocsdk/PayVault.ts:123](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L123)
 
 ## Methods
 
@@ -73,7 +73,7 @@ pocsdk/PayVault.ts:132
 
 #### Defined in
 
-pocsdk/PayVault.ts:288
+[pocsdk/PayVault.ts:258](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L258)
 
 ---
 
@@ -93,7 +93,7 @@ pocsdk/PayVault.ts:288
 
 #### Defined in
 
-pocsdk/PayVault.ts:210
+[pocsdk/PayVault.ts:203](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L203)
 
 ---
 
@@ -113,7 +113,7 @@ pocsdk/PayVault.ts:210
 
 #### Defined in
 
-pocsdk/PayVault.ts:223
+[pocsdk/PayVault.ts:214](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L214)
 
 ---
 
@@ -133,7 +133,7 @@ pocsdk/PayVault.ts:223
 
 #### Defined in
 
-pocsdk/PayVault.ts:307
+[pocsdk/PayVault.ts:277](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L277)
 
 ---
 
@@ -153,7 +153,7 @@ pocsdk/PayVault.ts:307
 
 #### Defined in
 
-pocsdk/PayVault.ts:312
+[pocsdk/PayVault.ts:282](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L282)
 
 ---
 
@@ -173,7 +173,7 @@ pocsdk/PayVault.ts:312
 
 #### Defined in
 
-pocsdk/PayVault.ts:263
+[pocsdk/PayVault.ts:240](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L240)
 
 ---
 
@@ -193,7 +193,7 @@ pocsdk/PayVault.ts:263
 
 #### Defined in
 
-pocsdk/PayVault.ts:274
+[pocsdk/PayVault.ts:246](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L246)
 
 ---
 
@@ -207,7 +207,7 @@ pocsdk/PayVault.ts:274
 
 #### Defined in
 
-pocsdk/PayVault.ts:200
+[pocsdk/PayVault.ts:193](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L193)
 
 ---
 
@@ -227,7 +227,7 @@ pocsdk/PayVault.ts:200
 
 #### Defined in
 
-pocsdk/PayVault.ts:295
+[pocsdk/PayVault.ts:265](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L265)
 
 ---
 
@@ -247,7 +247,7 @@ pocsdk/PayVault.ts:295
 
 #### Defined in
 
-pocsdk/PayVault.ts:246
+[pocsdk/PayVault.ts:228](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L228)
 
 ---
 
@@ -261,7 +261,7 @@ pocsdk/PayVault.ts:246
 
 #### Defined in
 
-pocsdk/PayVault.ts:171
+[pocsdk/PayVault.ts:164](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L164)
 
 ---
 
@@ -275,7 +275,7 @@ pocsdk/PayVault.ts:171
 
 #### Defined in
 
-pocsdk/PayVault.ts:301
+[pocsdk/PayVault.ts:271](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L271)
 
 ---
 
@@ -289,7 +289,7 @@ pocsdk/PayVault.ts:301
 
 #### Defined in
 
-pocsdk/PayVault.ts:194
+[pocsdk/PayVault.ts:187](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L187)
 
 ---
 
@@ -303,7 +303,7 @@ pocsdk/PayVault.ts:194
 
 #### Defined in
 
-pocsdk/PayVault.ts:257
+[pocsdk/PayVault.ts:234](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L234)
 
 ---
 
@@ -324,7 +324,7 @@ pocsdk/PayVault.ts:257
 
 #### Defined in
 
-pocsdk/PayVault.ts:139
+[pocsdk/PayVault.ts:130](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L130)
 
 ---
 
@@ -345,7 +345,7 @@ pocsdk/PayVault.ts:139
 
 #### Defined in
 
-pocsdk/PayVault.ts:163
+[pocsdk/PayVault.ts:156](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L156)
 
 ---
 
@@ -366,7 +366,7 @@ pocsdk/PayVault.ts:163
 
 #### Defined in
 
-pocsdk/PayVault.ts:232
+[pocsdk/PayVault.ts:221](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L221)
 
 ---
 
@@ -386,7 +386,7 @@ pocsdk/PayVault.ts:232
 
 #### Defined in
 
-pocsdk/PayVault.ts:178
+[pocsdk/PayVault.ts:171](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L171)
 
 ---
 
@@ -406,7 +406,7 @@ pocsdk/PayVault.ts:178
 
 #### Defined in
 
-pocsdk/PayVault.ts:185
+[pocsdk/PayVault.ts:178](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L178)
 
 ---
 
@@ -427,4 +427,4 @@ pocsdk/PayVault.ts:185
 
 #### Defined in
 
-pocsdk/PayVault.ts:152
+[pocsdk/PayVault.ts:143](https://github.com/Project-Krypto/ReactPayVault/blob/fe4385f/src/lib/pocsdk/PayVault.ts#L143)
