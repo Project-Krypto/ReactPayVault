@@ -21,20 +21,28 @@ const app = async (): Promise<UserConfigExport> => {
     },
     build: {
       lib: {
-        entry: path.resolve(__dirname, 'src/lib/index.ts'),
+        entry: path.resolve(__dirname, 'src/lib/index.tsx'),
         name,
         formats: ['es', 'umd'],
         fileName: (format) => `${name}.${format}.js`,
       },
       rollupOptions: {
-        external: ['react', 'react-dom', 'tailwindcss'],
+        external: ['react', 'react-dom', 'tailwindcss', '@tanstack/react-query'],
         output: {
           globals: {
             react: 'React',
             'react-dom': 'ReactDOM',
             tailwindcss: 'tailwindcss',
+            '@tanstack/react-query': 'react-query',
           },
         },
+      },
+    },
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, './src'),
+        '@components': path.resolve(__dirname, './src/lib/components'),
+        '@hooks': path.resolve(__dirname, './src/lib/hooks'),
       },
     },
     test: {

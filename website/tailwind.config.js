@@ -5,6 +5,7 @@ const flattenColorPalette = require('tailwindcss/lib/util/flattenColorPalette').
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  // darkMode: ["class", '[data-theme="dark"]'],
   darkMode: 'class',
   plugins: [
     // Generate CSS variables so that we may overwrite Docusaurus styles with them

@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[pocsdk/PayVault.ts:25](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/PayVault.ts#L25)
+types.ts:22
 
 ---
 
@@ -24,4 +24,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[pocsdk/PayVault.ts:23](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/PayVault.ts#L23)
+types.ts:20

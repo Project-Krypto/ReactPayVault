@@ -6,6 +6,11 @@ sidebar_position: 0.5
 custom_edit_url: null
 ---
 
+## Enumerations
+
+- [Endpoints](enums/Endpoints.md)
+- [Environment](enums/Environment.md)
+
 ## Classes
 
 - [PayVault](classes/PayVault.md)
@@ -20,7 +25,13 @@ custom_edit_url: null
 - [CreateApiKeyResponse](interfaces/CreateApiKeyResponse.md)
 - [CreateCartRequest](interfaces/CreateCartRequest.md)
 - [CreateCartResponse](interfaces/CreateCartResponse.md)
+- [OneClickCheckoutProps](interfaces/OneClickCheckoutProps.md)
 - [PayVaultConstructorProps](interfaces/PayVaultConstructorProps.md)
+- [PayVaultContextProps](interfaces/PayVaultContextProps.md)
+- [PayVaultProviderProps](interfaces/PayVaultProviderProps.md)
+- [PayVaultStoreProviderProps](interfaces/PayVaultStoreProviderProps.md)
+- [StoreDetailsUpdate](interfaces/StoreDetailsUpdate.md)
+- [UseOneClickCheckoutResponse](interfaces/UseOneClickCheckoutResponse.md)
 
 ## Type Aliases
 
@@ -30,7 +41,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[components/atoms/at-button/index.tsx:8](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/components/atoms/at-button/index.tsx#L8)
+[components/atoms/at-button/index.tsx:8](https://github.com/Project-Krypto/ReactPayVault/blob/c2e0057/src/lib/components/atoms/at-button/index.tsx#L8)
 
 ---
 
@@ -61,7 +72,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[pocsdk/PayVault.ts:77](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/PayVault.ts#L77)
+types.ts:76
 
 ---
 
@@ -71,7 +82,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[pocsdk/PayVault.ts:96](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/PayVault.ts#L96)
+types.ts:95
 
 ---
 
@@ -95,7 +106,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[pocsdk/PayVault.ts:64](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/PayVault.ts#L64)
+types.ts:61
 
 ---
 
@@ -115,7 +126,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[pocsdk/PayVault.ts:98](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/PayVault.ts#L98)
+types.ts:97
 
 ## Variables
 
@@ -133,7 +144,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[components/atoms/at-button/index.tsx:3](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/components/atoms/at-button/index.tsx#L3)
+[components/atoms/at-button/index.tsx:3](https://github.com/Project-Krypto/ReactPayVault/blob/c2e0057/src/lib/components/atoms/at-button/index.tsx#L3)
 
 ---
 
@@ -146,7 +157,7 @@ provides default values for the CartContextProps interface.
 
 #### Defined in
 
-[pocsdk/hooks/useCart.tsx:64](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/hooks/useCart.tsx#L64)
+hooks/useCart.tsx:65
 
 ---
 
@@ -156,7 +167,17 @@ provides default values for the CartContextProps interface.
 
 #### Defined in
 
-[pocsdk/hooks/useStore.tsx:16](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/hooks/useStore.tsx#L16)
+hooks/useStore.tsx:61
+
+---
+
+### queryClient
+
+• `Const` **queryClient**: `QueryClient`
+
+#### Defined in
+
+components/providers/PayVaultProvider.tsx:33
 
 ---
 
@@ -166,29 +187,9 @@ provides default values for the CartContextProps interface.
 
 #### Defined in
 
-[components/atoms/at-button/index.tsx:10](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/components/atoms/at-button/index.tsx#L10)
+[components/atoms/at-button/index.tsx:10](https://github.com/Project-Krypto/ReactPayVault/blob/c2e0057/src/lib/components/atoms/at-button/index.tsx#L10)
 
 ## Functions
-
-### AddToCart
-
-▸ **AddToCart**(`props`): `Element`
-
-#### Parameters
-
-| Name    | Type                                                                                                                                       |
-| :------ | :----------------------------------------------------------------------------------------------------------------------------------------- |
-| `props` | { `productId`: `number` ; `quantity?`: `number` } & `ClassAttributes`<`HTMLButtonElement`\> & `ButtonHTMLAttributes`<`HTMLButtonElement`\> |
-
-#### Returns
-
-`Element`
-
-#### Defined in
-
-[pocsdk/components/AddToCart.tsx:8](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/components/AddToCart.tsx#L8)
-
----
 
 ### AtButton
 
@@ -206,7 +207,7 @@ provides default values for the CartContextProps interface.
 
 #### Defined in
 
-[components/atoms/at-button/index.tsx:22](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/components/atoms/at-button/index.tsx#L22)
+[components/atoms/at-button/index.tsx:22](https://github.com/Project-Krypto/ReactPayVault/blob/c2e0057/src/lib/components/atoms/at-button/index.tsx#L22)
 
 ---
 
@@ -220,27 +221,7 @@ provides default values for the CartContextProps interface.
 
 #### Defined in
 
-[components/molecules/ml-banner/index.tsx:1](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/components/molecules/ml-banner/index.tsx#L1)
-
----
-
-### OneClickCheckout
-
-▸ **OneClickCheckout**(`props`): `Element`
-
-#### Parameters
-
-| Name    | Type                                                                                                                                       |
-| :------ | :----------------------------------------------------------------------------------------------------------------------------------------- |
-| `props` | { `productId`: `number` ; `quantity?`: `number` } & `ClassAttributes`<`HTMLButtonElement`\> & `ButtonHTMLAttributes`<`HTMLButtonElement`\> |
-
-#### Returns
-
-`Element`
-
-#### Defined in
-
-[pocsdk/components/AddToCart.tsx:30](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/components/AddToCart.tsx#L30)
+[components/molecules/ml-banner/index.tsx:1](https://github.com/Project-Krypto/ReactPayVault/blob/c2e0057/src/lib/components/molecules/ml-banner/index.tsx#L1)
 
 ---
 
@@ -254,7 +235,7 @@ provides default values for the CartContextProps interface.
 
 #### Defined in
 
-[components/organisms/or-footer/index.tsx:1](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/components/organisms/or-footer/index.tsx#L1)
+[components/organisms/or-footer/index.tsx:1](https://github.com/Project-Krypto/ReactPayVault/blob/c2e0057/src/lib/components/organisms/or-footer/index.tsx#L1)
 
 ---
 
@@ -279,29 +260,57 @@ It accepts children as React nodes and a client as a PayVault instance.
 
 #### Defined in
 
-[pocsdk/hooks/useCart.tsx:93](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/hooks/useCart.tsx#L93)
+hooks/useCart.tsx:94
 
 ---
 
-### PayVaultStoreProvider
+### PayVaultProvider
 
-▸ **PayVaultStoreProvider**(`«destructured»`): `Element`
+▸ **PayVaultProvider**(`props`): `Element`
+
+A provider component that sets up the QueryClient and PayVaultStoreProvider.
 
 #### Parameters
 
-| Name             | Type                                                                                                      |
-| :--------------- | :-------------------------------------------------------------------------------------------------------- |
-| `«destructured»` | `Object`                                                                                                  |
-| › `children`     | `ReactNode`                                                                                               |
-| › `client`       | [`PayVaultConstructorProps`](interfaces/PayVaultConstructorProps.md) \| [`PayVault`](classes/PayVault.md) |
+| Name    | Type                                                           | Description                                |
+| :------ | :------------------------------------------------------------- | :----------------------------------------- |
+| `props` | [`PayVaultProviderProps`](interfaces/PayVaultProviderProps.md) | The properties for the provider component. |
 
 #### Returns
 
 `Element`
 
+The provider component with the QueryClient and PayVaultStoreProvider setup.
+
 #### Defined in
 
-[pocsdk/hooks/useStore.tsx:24](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/hooks/useStore.tsx#L24)
+components/providers/PayVaultProvider.tsx:63
+
+---
+
+### PayVaultStoreProvider
+
+▸ **PayVaultStoreProvider**(`props`): `Element`
+
+A React context provider component for managing the PayVault store state.
+
+#### Parameters
+
+| Name             | Type                                                                                                      | Description                                              |
+| :--------------- | :-------------------------------------------------------------------------------------------------------- | :------------------------------------------------------- |
+| `props`          | `Object`                                                                                                  | An object containing the children and client properties. |
+| `props.children` | `ReactNode`                                                                                               | -                                                        |
+| `props.client`   | [`PayVaultConstructorProps`](interfaces/PayVaultConstructorProps.md) \| [`PayVault`](classes/PayVault.md) | -                                                        |
+
+#### Returns
+
+`Element`
+
+The PayVaultStoreProvider component with the provided children.
+
+#### Defined in
+
+hooks/useStore.tsx:75
 
 ---
 
@@ -317,7 +326,7 @@ A custom hook that returns the CartContext.
 
 #### Defined in
 
-[pocsdk/hooks/useCart.tsx:84](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/hooks/useCart.tsx#L84)
+hooks/useCart.tsx:85
 
 ---
 
@@ -325,48 +334,59 @@ A custom hook that returns the CartContext.
 
 ▸ **useClient**(): [`PayVault`](classes/PayVault.md)
 
+Hook to retrieve the store client
+
 #### Returns
 
 [`PayVault`](classes/PayVault.md)
 
 #### Defined in
 
-[pocsdk/hooks/useClient.tsx:3](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/hooks/useClient.tsx#L3)
+hooks/useClient.tsx:4
 
 ---
 
 ### useOneClickCheckout
 
-▸ **useOneClickCheckout**(`«destructured»`): `Object`
+▸ **useOneClickCheckout**(`props`): [`UseOneClickCheckoutResponse`](interfaces/UseOneClickCheckoutResponse.md)
+
+A custom hook that simplifies the process of adding a product to the cart
+and optionally redirecting the user to the cart page.
 
 #### Parameters
 
-| Name             | Type      |
-| :--------------- | :-------- |
-| `«destructured»` | `Object`  |
-| › `productId`    | `number`  |
-| › `quantity?`    | `number`  |
-| › `redirect?`    | `boolean` |
+| Name    | Type                                                           | Description                        |
+| :------ | :------------------------------------------------------------- | :--------------------------------- |
+| `props` | [`OneClickCheckoutProps`](interfaces/OneClickCheckoutProps.md) | The input parameters for the hook. |
 
 #### Returns
 
-`Object`
+[`UseOneClickCheckoutResponse`](interfaces/UseOneClickCheckoutResponse.md)
 
-| Name              | Type                                                     | Description                                                                                                                    |
-| :---------------- | :------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
-| `addToCart`       | (`item`: [`CartItem`](interfaces/CartItem.md)) => `void` | addToCart: A function that accepts a CartItem object as a parameter and adds the item to the shopping cart.                    |
-| `cartId`          | `undefined` \| `string`                                  | cartId: A string representing the unique identifier of the cart, or undefined if the cart has not been created yet.            |
-| `cartItems`       | [`CartItem`](interfaces/CartItem.md)[]                   | cartItems: An array of CartItem objects, representing the items in the shopping cart.                                          |
-| `cartLink`        | `undefined` \| `string`                                  | cartLink: A string representing the URL for the cart's checkout page, or undefined if the cart has not been created yet.       |
-| `createCheckout`  | `undefined`                                              | -                                                                                                                              |
-| `isLoading`       | `boolean`                                                | isLoading: A boolean indicating whether the cart is currently being loaded or modified.                                        |
-| `removeFromCart`  | (`id`: `number`) => `void`                               | removeFromCart: A function that accepts an item's ID as a parameter and removes the corresponding item from the shopping cart. |
-| `totalCost`       | `number`                                                 | Total cost of everything in the cart, in USDC                                                                                  |
-| `triggerCheckout` | () => `Promise`<`void`\>                                 | -                                                                                                                              |
+An object containing the triggerCheckout function and
+the cart properties without the createCheckout function.
 
 #### Defined in
 
-[pocsdk/hooks/useOneClickCheckout.tsx:5](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/hooks/useOneClickCheckout.tsx#L5)
+hooks/useOneClickCheckout.tsx:44
+
+---
+
+### usePayVaultContext
+
+▸ **usePayVaultContext**(): [`PayVaultContextProps`](interfaces/PayVaultContextProps.md)
+
+A custom hook to access the PayVaultContext.
+
+#### Returns
+
+[`PayVaultContextProps`](interfaces/PayVaultContextProps.md)
+
+The PayVaultContext properties.
+
+#### Defined in
+
+components/providers/PayVaultProvider.tsx:53
 
 ---
 
@@ -374,20 +394,24 @@ A custom hook that returns the CartContext.
 
 ▸ **useProduct**(`props`): { `product`: `undefined` \| [`Product`](#product) } \| { `product`: `undefined` \| [`Product`](#product) } \| { `product`: `undefined` \| [`Product`](#product) } \| { `product`: `undefined` \| [`Product`](#product) }
 
+A custom hook that fetches a single product based on the provided product ID.
+
 #### Parameters
 
-| Name              | Type                 |
-| :---------------- | :------------------- |
-| `props`           | `Object`             |
-| `props.productId` | `string` \| `number` |
+| Name              | Type                 | Description                                  |
+| :---------------- | :------------------- | :------------------------------------------- |
+| `props`           | `Object`             | An object containing the productId property. |
+| `props.productId` | `string` \| `number` | -                                            |
 
 #### Returns
 
 { `product`: `undefined` \| [`Product`](#product) } \| { `product`: `undefined` \| [`Product`](#product) } \| { `product`: `undefined` \| [`Product`](#product) } \| { `product`: `undefined` \| [`Product`](#product) }
 
+An object containing the fetched product and additional query details.
+
 #### Defined in
 
-[pocsdk/hooks/useProducts.tsx:34](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/hooks/useProducts.tsx#L34)
+hooks/useProducts.tsx:49
 
 ---
 
@@ -395,20 +419,25 @@ A custom hook that returns the CartContext.
 
 ▸ **useProducts**(`props?`): { `products`: `undefined` \| [`Product`](#product)[] } \| { `products`: `undefined` \| [`Product`](#product)[] } \| { `products`: `undefined` \| [`Product`](#product)[] } \| { `products`: `undefined` \| [`Product`](#product)[] }
 
+A custom hook that fetches products based on the provided product IDs.
+If no product IDs are provided, it fetches all products.
+
 #### Parameters
 
-| Name                | Type                     |
-| :------------------ | :----------------------- |
-| `props?`            | `Object`                 |
-| `props.productIds?` | (`string` \| `number`)[] |
+| Name                | Type                     | Description                                            |
+| :------------------ | :----------------------- | :----------------------------------------------------- |
+| `props?`            | `Object`                 | An object containing the optional productIds property. |
+| `props.productIds?` | (`string` \| `number`)[] | -                                                      |
 
 #### Returns
 
 { `products`: `undefined` \| [`Product`](#product)[] } \| { `products`: `undefined` \| [`Product`](#product)[] } \| { `products`: `undefined` \| [`Product`](#product)[] } \| { `products`: `undefined` \| [`Product`](#product)[] }
 
+An object containing the fetched products and additional query details.
+
 #### Defined in
 
-[pocsdk/hooks/useProducts.tsx:6](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/hooks/useProducts.tsx#L6)
+hooks/useProducts.tsx:13
 
 ---
 
@@ -422,4 +451,4 @@ A custom hook that returns the CartContext.
 
 #### Defined in
 
-[pocsdk/hooks/useStore.tsx:22](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/hooks/useStore.tsx#L22)
+hooks/useStore.tsx:67

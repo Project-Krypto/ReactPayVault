@@ -6,11 +6,14 @@ module.exports = {
     '@storybook/addon-interactions',
     '@storybook/addon-postcss',
   ],
-  framework: '@storybook/react',
-  core: {
-    builder: '@storybook/builder-vite',
+  framework: {
+    name: '@storybook/react-vite',
+    options: {},
   },
   features: {
     storyStoreV7: true,
+  },
+  docs: {
+    autodocs: true,
   },
 }

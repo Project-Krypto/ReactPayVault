@@ -1,13 +1,18 @@
 ---
-id: 'CartContextProps'
-title: 'Interface: CartContextProps'
-sidebar_label: 'CartContextProps'
+id: 'UseOneClickCheckoutResponse'
+title: 'Interface: UseOneClickCheckoutResponse'
+sidebar_label: 'UseOneClickCheckoutResponse'
 sidebar_position: 0
 custom_edit_url: null
 ---
 
-The shape of the context object that provides a set of functions and properties
-for managing the shopping cart.
+Interface representing the response of the useOneClickCheckout hook.
+
+## Hierarchy
+
+- `Omit`<[`CartContextProps`](CartContextProps.md), `"createCheckout"`\>
+
+  ↳ **`UseOneClickCheckoutResponse`**
 
 ## Properties
 
@@ -32,6 +37,10 @@ and adds the item to the shopping cart.
 
 `void`
 
+#### Inherited from
+
+Omit.addToCart
+
 #### Defined in
 
 hooks/useCart.tsx:23
@@ -44,6 +53,10 @@ hooks/useCart.tsx:23
 
 cartId: A string representing the unique identifier of the cart,
 or undefined if the cart has not been created yet.
+
+#### Inherited from
+
+Omit.cartId
 
 #### Defined in
 
@@ -58,6 +71,10 @@ hooks/useCart.tsx:47
 cartItems: An array of CartItem objects, representing the items
 in the shopping cart.
 
+#### Inherited from
+
+Omit.cartItems
+
 #### Defined in
 
 hooks/useCart.tsx:17
@@ -71,30 +88,13 @@ hooks/useCart.tsx:17
 cartLink: A string representing the URL for the cart's checkout
 page, or undefined if the cart has not been created yet.
 
+#### Inherited from
+
+Omit.cartLink
+
 #### Defined in
 
 hooks/useCart.tsx:53
-
----
-
-### createCheckout
-
-• **createCheckout**: () => `void`
-
-#### Type declaration
-
-▸ (): `void`
-
-createCheckout: A function that creates a checkout session for
-the shopping cart.
-
-##### Returns
-
-`void`
-
-#### Defined in
-
-hooks/useCart.tsx:35
 
 ---
 
@@ -104,6 +104,10 @@ hooks/useCart.tsx:35
 
 isLoading: A boolean indicating whether the cart is currently
 being loaded or modified.
+
+#### Inherited from
+
+Omit.isLoading
 
 #### Defined in
 
@@ -132,6 +136,10 @@ and removes the corresponding item from the shopping cart.
 
 `void`
 
+#### Inherited from
+
+Omit.removeFromCart
+
 #### Defined in
 
 hooks/useCart.tsx:29
@@ -144,6 +152,30 @@ hooks/useCart.tsx:29
 
 Total cost of everything in the cart, in USDC
 
+#### Inherited from
+
+Omit.totalCost
+
 #### Defined in
 
 hooks/useCart.tsx:58
+
+---
+
+### triggerCheckout
+
+• **triggerCheckout**: () => `Promise`<`void`\>
+
+#### Type declaration
+
+▸ (): `Promise`<`void`\>
+
+A function that triggers the checkout process.
+
+##### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+hooks/useOneClickCheckout.tsx:33

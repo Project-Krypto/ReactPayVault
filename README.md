@@ -1,3 +1,16 @@
+### Development Notes
+
+When testing the library, you can setup a link between the library and the repo you're testing with via the `link` command
+
+```sh
+# Library
+yarn link # npm link
+
+# Consuming Repo
+yarn link LIBRARY_NAME # npm link <library-name>
+
+```
+
 # ⚛️⚡ Vite + React + Typescript Component Library Template
 
 ## Features

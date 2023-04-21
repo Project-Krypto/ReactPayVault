@@ -4,7 +4,6 @@ module.exports = {
     es2021: true,
   },
   plugins: ['@typescript-eslint', 'react', 'simple-import-sort', 'unused-imports', 'eslint-plugin-tsdoc'],
-
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -16,6 +15,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'prettier',
     'standard-with-typescript',
+    'plugin:storybook/recommended',
   ],
   rules: {
     'react/jsx-key': 'off',
@@ -23,17 +23,20 @@ module.exports = {
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': 'warn',
     'no-console': 'warn',
-
     'no-unused-vars': 'off',
     'no-console': 'warn',
     '@typescript-eslint/ban-ts-ignore': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'react/no-unescaped-entities': 'off',
-
     'react/display-name': 'off',
-    'react/jsx-curly-brace-presence': ['warn', { props: 'never', children: 'never' }],
-
+    'react/jsx-curly-brace-presence': [
+      'warn',
+      {
+        props: 'never',
+        children: 'never',
+      },
+    ],
     //#region  //*=========== Unused Import ===========
     '@typescript-eslint/no-unused-vars': 'off',
     'unused-imports/no-unused-imports': 'warn',
@@ -87,6 +90,7 @@ module.exports = {
     ],
     //#endregion  //*======== Import Sort ===========
   },
+
   globals: {
     React: true,
     JSX: true,

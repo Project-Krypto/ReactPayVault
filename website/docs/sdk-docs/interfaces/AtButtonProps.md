@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[components/atoms/at-button/index.tsx:19](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/components/atoms/at-button/index.tsx#L19)
+[components/atoms/at-button/index.tsx:19](https://github.com/Project-Krypto/ReactPayVault/blob/c2e0057/src/lib/components/atoms/at-button/index.tsx#L19)
 
 ---
 
@@ -30,7 +30,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[components/atoms/at-button/index.tsx:17](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/components/atoms/at-button/index.tsx#L17)
+[components/atoms/at-button/index.tsx:17](https://github.com/Project-Krypto/ReactPayVault/blob/c2e0057/src/lib/components/atoms/at-button/index.tsx#L17)
 
 ---
 
@@ -40,4 +40,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[components/atoms/at-button/index.tsx:18](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/components/atoms/at-button/index.tsx#L18)
+[components/atoms/at-button/index.tsx:18](https://github.com/Project-Krypto/ReactPayVault/blob/c2e0057/src/lib/components/atoms/at-button/index.tsx#L18)

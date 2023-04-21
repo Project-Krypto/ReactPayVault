@@ -1,10 +1,9 @@
 import { ButtonHTMLAttributes, DetailedHTMLProps } from 'react'
 
-import { useCart } from '../hooks/useCart'
-import { useOneClickCheckout } from '../hooks/useOneClickCheckout'
-import { useProduct } from '../hooks/useProducts'
+import { useProduct, useOneClickCheckout, useCart } from '@hooks'
+import { PayVaultProvider } from '../../providers'
 
-type ButtonProps = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
+export type ButtonProps = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
 export const AddToCart = (props: { productId: number; quantity?: number } & ButtonProps) => {
   const { addToCart, removeFromCart, ...cart } = useCart()
   const { product } = useProduct({ productId: parseInt(`${props.productId}`) })

@@ -34,9 +34,6 @@ const config = {
   // Set the production url of your site here
   // @ts-ignore
   url: packageJson.homepage,
-
-  // url: 'https://your-docusaurus-test-site.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
   trailingSlash: false,
@@ -70,7 +67,7 @@ const config = {
           fullNames: true,
         },
         excludeExternals: true,
-        entryPoints: ['../src/lib/index.ts'],
+        entryPoints: ['../src/lib/index.tsx'],
         tsconfig: '../tsconfig.json',
         plugin: ['./plugin/typedoc-plugin-class-fns-to-methods.cjs'],
         readme: 'none',
@@ -100,13 +97,13 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: `${RepoUrl}/website/docs`,
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: `${RepoUrl}/website/blog`,
         },
         theme: {
           customCss: [require.resolve('./src/css/theme.css'), require.resolve('./src/css/custom.css')],
@@ -186,7 +183,7 @@ const config = {
       //   theme: lightCodeTheme,
       //   darkTheme: darkCodeTheme,
       // },
-      clientModules: [require.resolve('./plugin/dark-mode-syncer.ts')],
+      // clientModules: [require.resolve('./plugin/dark-mode-syncer.ts')],
     }),
 }
 

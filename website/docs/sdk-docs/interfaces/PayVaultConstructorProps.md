@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[pocsdk/PayVault.ts:14](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/PayVault.ts#L14)
+types.ts:11
 
 ---
 
@@ -24,17 +24,17 @@ custom_edit_url: null
 
 #### Defined in
 
-[pocsdk/PayVault.ts:15](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/PayVault.ts#L15)
+types.ts:12
 
 ---
 
 ### environment
 
-• `Optional` **environment**: `Environment`
+• `Optional` **environment**: [`Environment`](../enums/Environment.md)
 
 #### Defined in
 
-[pocsdk/PayVault.ts:16](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/PayVault.ts#L16)
+types.ts:13
 
 ---
 
@@ -44,4 +44,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[pocsdk/PayVault.ts:13](https://github.com/Project-Krypto/ReactPayVault/blob/a940aba/src/lib/pocsdk/PayVault.ts#L13)
+types.ts:10

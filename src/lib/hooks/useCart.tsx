@@ -2,7 +2,8 @@ import { useMutation } from '@tanstack/react-query'
 import React, { createContext, useContext, useMemo, useState } from 'react'
 
 import { useStore } from './useStore'
-import { CartItem, PayVault } from '../PayVault'
+import { PayVault } from '../PayVault'
+import { CartItem } from '../types'
 
 /**
  * The shape of the context object that provides a set of functions and properties
