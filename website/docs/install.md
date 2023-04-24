@@ -2,46 +2,133 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Installation / Setup
 
-Let's discover **Docusaurus in less than 5 minutes**.
+How to get PayVault setup in **5 minutes**.
 
 ## Getting Started
 
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
 ### What you'll need
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
+- A PayVault **[Store](https://docusaurus.new)**.
+
+  - An **[Api Key](https://docusaurus.new)** generated for your Store.
+
+- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
   - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
-## Generate a new site
+## Install the Package
 
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
+Install the package with your package manager of choice.
 
 ```bash
-npm init docusaurus@latest my-website classic
+# Functional after we publish to NPM
+npm install --save-dev payvault-react
+# Or
+yarn add -D payvault-react
+
+### For now do the following:
+
+# Clone and install the repo
+git clone https://github.com/Project-Krypto/ReactPayVault.git
+
+# Install dependencies
+yarn
+
+# Create the Link for the dependency package
+yarn link # Run in the "payvault-react" repo
+
+yarn link "payvault-react" # Run in the consuming dependency repo
+
+
+# Start Developing
+yarn watch # in the "payvault-react" repo
+yarn dev # in the consuming package
+
+# Now the dependency library will update the consuming library whenever a change is made.
+# Meaning, the localhost site will update whenever the library changes for dev testing
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+This will install all dependencies you need to interact with Pay Vault.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+## Integrate with your site
 
-## Start your site
+### Context Setup
 
-Run the development server:
+Place the Store context provider around your App
 
-```bash
-cd my-website
-npm run start
+```tsx title="App.tsx"
+import { PayVaultProvider } from 'payvault-react'
+
+const API_KEY = `edeeedd5-4672-4293-a3a4-f15bebcb8602`
+const STORE_ID = `05323cbf-554d-4c64-929d-7b9081fad769`
+
+function App({ Component, pageProps }: AppProps) {
+  return (
+    <PayVaultProvider client={{ apiKey: API_KEY, storeId: STORE_ID }}>
+      <Component {...pageProps} />
+    </PayVaultProvider>
+  )
+}
+
+export default App
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+### Using hooks
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+Once the context has been setup, you can use hooks anywhere within the app.
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+_For more details on these hooks, please see the Provider/Context documentation_
+
+- **Available Hooks:**
+  - `useStore()` - Type: **[StoreContextProps](/docs/sdk-docs/interfaces/StoreContextProps)** **[Docs here](/docs/sdk-docs#useclient)**
+  - `useCart()` - **[Docs here](/docs/sdk-docs#useclient)**
+  - `useOneClickCheckout()` - **[Docs here](/docs/sdk-docs#useclient)**
+  - `useProducts()` - **[Docs here](/docs/sdk-docs#useclient)**
+  - `useClient()` - **[Docs here](/docs/sdk-docs#useclient)**
+
+```tsx title="storeDetails.tsx"
+import { useStore } from 'payvault-react'
+
+function ComponentName(props: any) {
+  const { storeDetails, storeId, client, updateStoreInfo, updateLogo, refresh } = useStore()
+  return (
+    <div>
+      <p> Store Id: {storeId} </p>
+      <button onClick={(e) => refresh()}>Refresh</button>
+      <button onClick={(e) => updateStoreInfo({ ...e })}>Update Store</button>
+    </div>
+  )
+}
+
+export default ComponentName
+```
+
+```tsx title="cartManagement.tsx"
+import { useCart } from 'payvault-react'
+
+function ComponentName(props: any) {
+  const { cartItems, addToCart, removeFromCart, createCheckout } = useCart()
+  return (
+    <div>
+      <button onClick={(e) => addToCart('PRODUCT_ID')}>Add Item to Cart</button>
+      <button onClick={(e) => removeFromCart('PRODUCT_ID')}>Remove Item from Cart</button>
+      <button onClick={(e) => createCheckout()}>Create Checkout with {cartItems.length} Items</button>
+    </div>
+  )
+}
+
+export default ComponentName
+```
+
+### Vault Components
+
+:::danger TBD
+
+Components in library still need to be developed
+
+:::
+
+- Cart Button
+- Checkout Button
+- Add to Cart Button

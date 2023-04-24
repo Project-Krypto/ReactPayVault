@@ -18,7 +18,7 @@ The ID of the product.
 
 #### Defined in
 
-hooks/useOneClickCheckout.tsx:12
+[hooks/useOneClickCheckout.tsx:12](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useOneClickCheckout.tsx#L12)
 
 ---
 
@@ -30,7 +30,7 @@ The quantity of the product to be added to the cart. Defaults to 1.
 
 #### Defined in
 
-hooks/useOneClickCheckout.tsx:17
+[hooks/useOneClickCheckout.tsx:17](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useOneClickCheckout.tsx#L17)
 
 ---
 
@@ -43,4 +43,4 @@ after adding the product. Defaults to true.
 
 #### Defined in
 
-hooks/useOneClickCheckout.tsx:23
+[hooks/useOneClickCheckout.tsx:23](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useOneClickCheckout.tsx#L23)

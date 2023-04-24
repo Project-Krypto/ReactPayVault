@@ -24,7 +24,7 @@ Partial.description
 
 #### Defined in
 
-types.ts:65
+[types.ts:62](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/types.ts#L62)
 
 ---
 
@@ -38,7 +38,7 @@ Partial.logoUrl
 
 #### Defined in
 
-types.ts:64
+[types.ts:61](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/types.ts#L61)
 
 ---
 
@@ -52,4 +52,4 @@ Partial.name
 
 #### Defined in
 
-types.ts:63
+[types.ts:60](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/types.ts#L60)

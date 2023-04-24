@@ -8,7 +8,7 @@ import { PayVaultConstructorProps, StoreDetails, StoreDetailsUpdate } from '../t
 /**
  * Interface representing the properties of the StoreContext.
  */
-interface StoreContextProps {
+export interface StoreContextProps {
   /**
    * An optional StoreDetails object containing information about the store.
    */
@@ -63,6 +63,7 @@ export const StoreContext = createContext<StoreContextProps>({
   client: new PayVault({ apiKey: '', storeId: '' }),
 } as StoreContextProps)
 
+/** Hook to interact with the Store context */
 export const useStore = () => useContext(StoreContext)
 
 /**

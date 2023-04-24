@@ -14,4 +14,4 @@ custom_edit_url: null
 
 #### Defined in
 
-components/providers/PayVaultProvider.tsx:28
+[components/providers/PayVaultProvider.tsx:25](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/components/providers/PayVaultProvider.tsx#L25)
