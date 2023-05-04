@@ -2,34 +2,46 @@ import React from 'react'
 import clsx from 'clsx'
 import styles from './styles.module.css'
 
+const SupportedChains = ['Algorand', 'Avalanche', 'Ethereum', 'Flow', 'Hedera', 'Solana', 'Stellar', 'TRON']
+
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and used to get your website up and running
-        quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
+    title: 'Store Management Dashboard',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go ahead and move your docs into the{' '}
-        <code>docs</code> directory.
+        Elevate your e-commerce experience with our powerful Store Management Dashboard! Take full control of your
+        online store and effortlessly showcase your products to customers. Our user-friendly dashboard makes it easy to
+        create, manage, and track your products, ensuring you stay ahead in the competitive e-commerce landscape.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Easy to Build. Easy to Use',
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    description: (
+      <>
+        Provides consistent interface for end users to use Crypto to purchase items, nearly all wallet connectors
+        supported on available chains. <br />
+        Typescript SDK is provided for developers to easily integrate with our service. Both simplistic and advanced
+        access patterns are available depending on your usecase.
+      </>
+    ),
+  },
+  {
+    title: 'Pay for Products using over 8 Different Chains',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the same
-        header and footer.
+        Currently we support USDC Payments on 8 different Chains, and plan to support Native Solana/Ethereum Payments
+        after release. <br />(
+        {SupportedChains.map((chain) => (
+          <>
+            <code>{chain}</code>
+            {', '}
+          </>
+        ))}{' '}
+        )
       </>
     ),
   },

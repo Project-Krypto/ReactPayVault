@@ -34,7 +34,7 @@ and adds the item to the shopping cart.
 
 #### Defined in
 
-[hooks/useCart.tsx:23](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useCart.tsx#L23)
+[hooks/useCart.tsx:23](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useCart.tsx#L23)
 
 ---
 
@@ -47,7 +47,7 @@ or undefined if the cart has not been created yet.
 
 #### Defined in
 
-[hooks/useCart.tsx:47](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useCart.tsx#L47)
+[hooks/useCart.tsx:47](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useCart.tsx#L47)
 
 ---
 
@@ -60,7 +60,7 @@ in the shopping cart.
 
 #### Defined in
 
-[hooks/useCart.tsx:17](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useCart.tsx#L17)
+[hooks/useCart.tsx:17](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useCart.tsx#L17)
 
 ---
 
@@ -73,7 +73,7 @@ page, or undefined if the cart has not been created yet.
 
 #### Defined in
 
-[hooks/useCart.tsx:53](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useCart.tsx#L53)
+[hooks/useCart.tsx:53](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useCart.tsx#L53)
 
 ---
 
@@ -94,7 +94,7 @@ the shopping cart.
 
 #### Defined in
 
-[hooks/useCart.tsx:35](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useCart.tsx#L35)
+[hooks/useCart.tsx:35](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useCart.tsx#L35)
 
 ---
 
@@ -107,7 +107,7 @@ being loaded or modified.
 
 #### Defined in
 
-[hooks/useCart.tsx:41](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useCart.tsx#L41)
+[hooks/useCart.tsx:41](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useCart.tsx#L41)
 
 ---
 
@@ -134,7 +134,7 @@ and removes the corresponding item from the shopping cart.
 
 #### Defined in
 
-[hooks/useCart.tsx:29](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useCart.tsx#L29)
+[hooks/useCart.tsx:29](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useCart.tsx#L29)
 
 ---
 
@@ -146,4 +146,4 @@ Total cost of everything in the cart, in USDC
 
 #### Defined in
 
-[hooks/useCart.tsx:58](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useCart.tsx#L58)
+[hooks/useCart.tsx:58](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useCart.tsx#L58)

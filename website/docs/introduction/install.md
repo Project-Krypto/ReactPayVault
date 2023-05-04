@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 # Installation / Setup
@@ -16,6 +16,13 @@ How to get PayVault setup in **5 minutes**.
 
 - [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
   - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+
+:::info API Keys
+:lock: API Keys would be needed to integrate Checkout, Generate yours [here](https://payvault.com)
+:::
+:::tip Source Code
+:zap: Full source code for the demo app available [here](https://github.com/payvault/checkout-demo-example.git)
+:::
 
 ## Install the Package
 

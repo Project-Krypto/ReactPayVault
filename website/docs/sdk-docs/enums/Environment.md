@@ -6,6 +6,8 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
+Define which environment to use, defaults to Prod
+
 ## Enumeration Members
 
 ### Dev
@@ -14,7 +16,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:2](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/types.ts#L2)
+[types.ts:4](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L4)
 
 ---
 
@@ -24,4 +26,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:3](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/types.ts#L3)
+[types.ts:5](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L5)

@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:37](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/types.ts#L37)
+[types.ts:48](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L48)
 
 ---
 
@@ -24,7 +24,17 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:38](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/types.ts#L38)
+[types.ts:49](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L49)
+
+---
+
+### name
+
+• `Optional` **name**: `string`
+
+#### Defined in
+
+[types.ts:50](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L50)
 
 ---
 
@@ -34,7 +44,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:40](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/types.ts#L40)
+[types.ts:53](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L53)
 
 ---
 
@@ -44,4 +54,14 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:39](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/types.ts#L39)
+[types.ts:52](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L52)
+
+---
+
+### type
+
+• **type**: [`ApiKeyType`](../enums/ApiKeyType.md)
+
+#### Defined in
+
+[types.ts:51](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L51)

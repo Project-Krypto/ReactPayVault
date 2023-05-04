@@ -1,3 +1,5 @@
+/** Define which environment to use, defaults to Prod
+ */
 export enum Environment {
   Dev = 'devnet',
   Prod = 'mainnet',
@@ -33,9 +35,20 @@ export interface CreateCartResponse {
 ///
 /// START API KEY
 ///
+
+/**
+ * Different Api Key Types
+ */
+export enum ApiKeyType {
+  CHECKOUT = 'CHECKOUT',
+  ADMIN = 'ADMIN',
+}
+
 export interface ApiKey {
   id: number
   key: string
+  name?: string
+  type: ApiKeyType
   storeId: string
   revenue: number
 }

@@ -24,7 +24,7 @@ Partial.description
 
 #### Defined in
 
-[types.ts:62](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/types.ts#L62)
+[types.ts:75](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L75)
 
 ---
 
@@ -38,7 +38,7 @@ Partial.logoUrl
 
 #### Defined in
 
-[types.ts:61](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/types.ts#L61)
+[types.ts:74](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L74)
 
 ---
 
@@ -52,4 +52,4 @@ Partial.name
 
 #### Defined in
 
-[types.ts:60](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/types.ts#L60)
+[types.ts:73](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L73)

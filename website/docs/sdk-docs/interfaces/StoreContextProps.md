@@ -18,7 +18,7 @@ The PayVault client instance used to interact with the PayVault API.
 
 #### Defined in
 
-[hooks/useStore.tsx:25](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useStore.tsx#L25)
+[hooks/useStore.tsx:25](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useStore.tsx#L25)
 
 ---
 
@@ -38,7 +38,7 @@ A function to refresh the store information.
 
 #### Defined in
 
-[hooks/useStore.tsx:30](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useStore.tsx#L30)
+[hooks/useStore.tsx:30](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useStore.tsx#L30)
 
 ---
 
@@ -50,7 +50,7 @@ An optional StoreDetails object containing information about the store.
 
 #### Defined in
 
-[hooks/useStore.tsx:15](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useStore.tsx#L15)
+[hooks/useStore.tsx:15](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useStore.tsx#L15)
 
 ---
 
@@ -62,7 +62,7 @@ The unique identifier of the store as a string.
 
 #### Defined in
 
-[hooks/useStore.tsx:20](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useStore.tsx#L20)
+[hooks/useStore.tsx:20](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useStore.tsx#L20)
 
 ---
 
@@ -88,7 +88,7 @@ A function to update the store logo.
 
 #### Defined in
 
-[hooks/useStore.tsx:42](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useStore.tsx#L42)
+[hooks/useStore.tsx:42](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useStore.tsx#L42)
 
 ---
 
@@ -114,4 +114,4 @@ A function to update the store information.
 
 #### Defined in
 
-[hooks/useStore.tsx:36](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useStore.tsx#L36)
+[hooks/useStore.tsx:36](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useStore.tsx#L36)

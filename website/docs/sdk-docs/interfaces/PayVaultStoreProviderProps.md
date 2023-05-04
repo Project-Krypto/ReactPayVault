@@ -18,7 +18,7 @@ The children elements to render within the PayVaultStoreProvider component.
 
 #### Defined in
 
-[hooks/useStore.tsx:52](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useStore.tsx#L52)
+[hooks/useStore.tsx:52](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useStore.tsx#L52)
 
 ---
 
@@ -30,4 +30,4 @@ The PayVault client instance or the constructor properties to create a new PayVa
 
 #### Defined in
 
-[hooks/useStore.tsx:57](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useStore.tsx#L57)
+[hooks/useStore.tsx:57](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useStore.tsx#L57)

@@ -43,7 +43,7 @@ Omit.addToCart
 
 #### Defined in
 
-[hooks/useCart.tsx:23](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useCart.tsx#L23)
+[hooks/useCart.tsx:23](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useCart.tsx#L23)
 
 ---
 
@@ -60,7 +60,7 @@ Omit.cartId
 
 #### Defined in
 
-[hooks/useCart.tsx:47](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useCart.tsx#L47)
+[hooks/useCart.tsx:47](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useCart.tsx#L47)
 
 ---
 
@@ -77,7 +77,7 @@ Omit.cartItems
 
 #### Defined in
 
-[hooks/useCart.tsx:17](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useCart.tsx#L17)
+[hooks/useCart.tsx:17](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useCart.tsx#L17)
 
 ---
 
@@ -94,7 +94,7 @@ Omit.cartLink
 
 #### Defined in
 
-[hooks/useCart.tsx:53](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useCart.tsx#L53)
+[hooks/useCart.tsx:53](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useCart.tsx#L53)
 
 ---
 
@@ -111,7 +111,7 @@ Omit.isLoading
 
 #### Defined in
 
-[hooks/useCart.tsx:41](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useCart.tsx#L41)
+[hooks/useCart.tsx:41](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useCart.tsx#L41)
 
 ---
 
@@ -142,7 +142,7 @@ Omit.removeFromCart
 
 #### Defined in
 
-[hooks/useCart.tsx:29](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useCart.tsx#L29)
+[hooks/useCart.tsx:29](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useCart.tsx#L29)
 
 ---
 
@@ -158,7 +158,7 @@ Omit.totalCost
 
 #### Defined in
 
-[hooks/useCart.tsx:58](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useCart.tsx#L58)
+[hooks/useCart.tsx:58](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useCart.tsx#L58)
 
 ---
 
@@ -178,4 +178,4 @@ A function that triggers the checkout process.
 
 #### Defined in
 
-[hooks/useOneClickCheckout.tsx:33](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/hooks/useOneClickCheckout.tsx#L33)
+[hooks/useOneClickCheckout.tsx:33](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useOneClickCheckout.tsx#L33)

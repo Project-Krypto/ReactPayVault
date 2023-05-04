@@ -22,7 +22,7 @@ Constructs a new PayVault client.
 
 #### Defined in
 
-[PayVault.ts:32](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L32)
+[PayVault.ts:32](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L32)
 
 ## Properties
 
@@ -32,7 +32,7 @@ Constructs a new PayVault client.
 
 #### Defined in
 
-[PayVault.ts:19](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L19)
+[PayVault.ts:19](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L19)
 
 ---
 
@@ -42,7 +42,7 @@ Constructs a new PayVault client.
 
 #### Defined in
 
-[PayVault.ts:20](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L20)
+[PayVault.ts:20](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L20)
 
 ## Accessors
 
@@ -63,7 +63,7 @@ Returns the headers required for API requests, given the current class variables
 
 #### Defined in
 
-[PayVault.ts:42](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L42)
+[PayVault.ts:42](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L42)
 
 ## Methods
 
@@ -81,7 +81,7 @@ A promise that resolves to the created API key.
 
 #### Defined in
 
-[PayVault.ts:249](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L249)
+[PayVault.ts:249](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L249)
 
 ---
 
@@ -101,7 +101,7 @@ A promise that resolves to the created API key.
 
 #### Defined in
 
-[PayVault.ts:160](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L160)
+[PayVault.ts:160](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L160)
 
 ---
 
@@ -125,7 +125,7 @@ A promise that resolves when the product is created.
 
 #### Defined in
 
-[PayVault.ts:176](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L176)
+[PayVault.ts:176](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L176)
 
 ---
 
@@ -149,7 +149,7 @@ A promise that resolves when the API key is deleted.
 
 #### Defined in
 
-[PayVault.ts:282](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L282)
+[PayVault.ts:282](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L282)
 
 ---
 
@@ -173,7 +173,7 @@ A promise that resolves when all API keys are deleted.
 
 #### Defined in
 
-[PayVault.ts:293](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L293)
+[PayVault.ts:293](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L293)
 
 ---
 
@@ -197,7 +197,7 @@ A promise that resolves when the product is deleted.
 
 #### Defined in
 
-[PayVault.ts:222](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L222)
+[PayVault.ts:222](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L222)
 
 ---
 
@@ -221,7 +221,7 @@ A promise that resolves when all products are deleted.
 
 #### Defined in
 
-[PayVault.ts:233](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L233)
+[PayVault.ts:233](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L233)
 
 ---
 
@@ -239,7 +239,7 @@ A promise that resolves when the store is deleted.
 
 #### Defined in
 
-[PayVault.ts:150](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L150)
+[PayVault.ts:150](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L150)
 
 ---
 
@@ -263,7 +263,7 @@ A promise that resolves to the API key details.
 
 #### Defined in
 
-[PayVault.ts:261](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L261)
+[PayVault.ts:261](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L261)
 
 ---
 
@@ -287,7 +287,7 @@ A promise that resolves to the product details.
 
 #### Defined in
 
-[PayVault.ts:201](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L201)
+[PayVault.ts:201](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L201)
 
 ---
 
@@ -305,7 +305,7 @@ A promise that resolves to the store details.
 
 #### Defined in
 
-[PayVault.ts:103](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L103)
+[PayVault.ts:103](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L103)
 
 ---
 
@@ -323,7 +323,7 @@ A promise that resolves to an array of API keys.
 
 #### Defined in
 
-[PayVault.ts:271](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L271)
+[PayVault.ts:271](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L271)
 
 ---
 
@@ -341,7 +341,7 @@ A promise that resolves to an array of store details.
 
 #### Defined in
 
-[PayVault.ts:140](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L140)
+[PayVault.ts:140](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L140)
 
 ---
 
@@ -359,7 +359,7 @@ A promise that resolves to an array of products.
 
 #### Defined in
 
-[PayVault.ts:211](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L211)
+[PayVault.ts:211](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L211)
 
 ---
 
@@ -382,7 +382,7 @@ Sends an API request to the specified path with the given options.
 
 #### Defined in
 
-[PayVault.ts:54](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L54)
+[PayVault.ts:54](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L54)
 
 ---
 
@@ -405,7 +405,7 @@ Abstraction on the standard request, but forces the response to json.
 
 #### Defined in
 
-[PayVault.ts:91](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L91)
+[PayVault.ts:91](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L91)
 
 ---
 
@@ -430,7 +430,7 @@ A promise that resolves when the product is updated.
 
 #### Defined in
 
-[PayVault.ts:189](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L189)
+[PayVault.ts:189](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L189)
 
 ---
 
@@ -454,7 +454,7 @@ A promise that resolves to the updated store details.
 
 #### Defined in
 
-[PayVault.ts:115](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L115)
+[PayVault.ts:115](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L115)
 
 ---
 
@@ -478,7 +478,7 @@ A promise that resolves to the updated store details.
 
 #### Defined in
 
-[PayVault.ts:127](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L127)
+[PayVault.ts:127](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L127)
 
 ---
 
@@ -501,4 +501,4 @@ Uploads a file to the specified path with the given options.
 
 #### Defined in
 
-[PayVault.ts:73](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/PayVault.ts#L73)
+[PayVault.ts:73](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/PayVault.ts#L73)

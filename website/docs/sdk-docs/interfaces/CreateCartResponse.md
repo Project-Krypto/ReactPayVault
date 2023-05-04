@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:27](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/types.ts#L27)
+[types.ts:29](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L29)
 
 ---
 
@@ -24,4 +24,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:26](https://github.com/Project-Krypto/ReactPayVault/blob/f4a2766/src/lib/types.ts#L26)
+[types.ts:28](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L28)
