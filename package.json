@@ -4,7 +4,7 @@
   "url": "https://github.com/Project-Krypto/ReactPayVault",
   "homepage": "https://payvault-docs.vercel.app",
   "description": "Crypto Ecom Payment Processing",
-  "version": "1.5.11",
+  "version": "1.0.0",
   "main": "./dist/payvault-react.umd.js",
   "module": "./dist/payvault-react.es.js",
   "types": "./dist/index.d.ts",
