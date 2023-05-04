@@ -16,7 +16,7 @@ Different Api Key Types
 
 #### Defined in
 
-[types.ts:44](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L44)
+[types.ts:44](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L44)
 
 ---
 
@@ -26,4 +26,4 @@ Different Api Key Types
 
 #### Defined in
 
-[types.ts:43](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L43)
+[types.ts:43](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L43)

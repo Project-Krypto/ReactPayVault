@@ -183,11 +183,11 @@ Your base app is ready to accept Solana Payments with Checkout SDK in mins! Make
 
 ## Next steps
 
-:::info [Webhooks](../checkout/webhooks.html)
+:::info [Webhooks](../features/webhooks)
 🔥
 Set up webhooks to detect and fulfill new payments and run post-checkout events such as saving the transaction details to a database, sending custom emails, and others
 :::
-:::info [Discounts](../checkout/discounts.html)
+:::info [Discounts](../features/discounts)
 🎉
 Reduce the amount charged to a customer by discounting their total due amount by a certain %, based on their NFT assets ownership
 :::

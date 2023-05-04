@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:48](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L48)
+[types.ts:48](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L48)
 
 ---
 
@@ -24,7 +24,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:49](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L49)
+[types.ts:49](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L49)
 
 ---
 
@@ -34,7 +34,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:50](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L50)
+[types.ts:50](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L50)
 
 ---
 
@@ -44,7 +44,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:53](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L53)
+[types.ts:53](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L53)
 
 ---
 
@@ -54,7 +54,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:52](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L52)
+[types.ts:52](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L52)
 
 ---
 
@@ -64,4 +64,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:51](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L51)
+[types.ts:51](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L51)

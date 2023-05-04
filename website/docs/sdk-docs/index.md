@@ -43,7 +43,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[components/atoms/at-button/index.tsx:8](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/components/atoms/at-button/index.tsx#L8)
+[components/atoms/at-button/index.tsx:8](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/components/atoms/at-button/index.tsx#L8)
 
 ---
 
@@ -74,7 +74,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:86](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L86)
+[types.ts:86](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L86)
 
 ---
 
@@ -84,7 +84,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:105](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L105)
+[types.ts:105](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L105)
 
 ---
 
@@ -108,7 +108,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:71](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L71)
+[types.ts:71](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L71)
 
 ---
 
@@ -128,7 +128,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:107](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L107)
+[types.ts:107](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L107)
 
 ## Variables
 
@@ -146,7 +146,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[components/atoms/at-button/index.tsx:3](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/components/atoms/at-button/index.tsx#L3)
+[components/atoms/at-button/index.tsx:3](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/components/atoms/at-button/index.tsx#L3)
 
 ---
 
@@ -159,7 +159,7 @@ provides default values for the CartContextProps interface.
 
 #### Defined in
 
-[hooks/useCart.tsx:65](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useCart.tsx#L65)
+[hooks/useCart.tsx:65](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useCart.tsx#L65)
 
 ---
 
@@ -169,7 +169,7 @@ provides default values for the CartContextProps interface.
 
 #### Defined in
 
-[hooks/useStore.tsx:60](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useStore.tsx#L60)
+[hooks/useStore.tsx:60](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useStore.tsx#L60)
 
 ---
 
@@ -179,7 +179,7 @@ provides default values for the CartContextProps interface.
 
 #### Defined in
 
-[components/providers/PayVaultProvider.tsx:28](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/components/providers/PayVaultProvider.tsx#L28)
+[components/providers/PayVaultProvider.tsx:28](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/components/providers/PayVaultProvider.tsx#L28)
 
 ---
 
@@ -189,7 +189,7 @@ provides default values for the CartContextProps interface.
 
 #### Defined in
 
-[components/atoms/at-button/index.tsx:10](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/components/atoms/at-button/index.tsx#L10)
+[components/atoms/at-button/index.tsx:10](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/components/atoms/at-button/index.tsx#L10)
 
 ## Functions
 
@@ -209,7 +209,7 @@ provides default values for the CartContextProps interface.
 
 #### Defined in
 
-[components/atoms/at-button/index.tsx:22](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/components/atoms/at-button/index.tsx#L22)
+[components/atoms/at-button/index.tsx:22](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/components/atoms/at-button/index.tsx#L22)
 
 ---
 
@@ -223,7 +223,7 @@ provides default values for the CartContextProps interface.
 
 #### Defined in
 
-[components/molecules/ml-banner/index.tsx:1](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/components/molecules/ml-banner/index.tsx#L1)
+[components/molecules/ml-banner/index.tsx:1](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/components/molecules/ml-banner/index.tsx#L1)
 
 ---
 
@@ -237,7 +237,7 @@ provides default values for the CartContextProps interface.
 
 #### Defined in
 
-[components/organisms/or-footer/index.tsx:1](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/components/organisms/or-footer/index.tsx#L1)
+[components/organisms/or-footer/index.tsx:1](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/components/organisms/or-footer/index.tsx#L1)
 
 ---
 
@@ -262,7 +262,7 @@ It accepts children as React nodes and a client as a PayVault instance.
 
 #### Defined in
 
-[hooks/useCart.tsx:94](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useCart.tsx#L94)
+[hooks/useCart.tsx:94](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useCart.tsx#L94)
 
 ---
 
@@ -286,7 +286,7 @@ The provider component with the QueryClient and PayVaultStoreProvider setup.
 
 #### Defined in
 
-[components/providers/PayVaultProvider.tsx:58](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/components/providers/PayVaultProvider.tsx#L58)
+[components/providers/PayVaultProvider.tsx:58](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/components/providers/PayVaultProvider.tsx#L58)
 
 ---
 
@@ -312,7 +312,7 @@ The PayVaultStoreProvider component with the provided children.
 
 #### Defined in
 
-[hooks/useStore.tsx:75](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useStore.tsx#L75)
+[hooks/useStore.tsx:75](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useStore.tsx#L75)
 
 ---
 
@@ -328,7 +328,7 @@ A custom hook that returns the CartContext.
 
 #### Defined in
 
-[hooks/useCart.tsx:85](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useCart.tsx#L85)
+[hooks/useCart.tsx:85](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useCart.tsx#L85)
 
 ---
 
@@ -344,7 +344,7 @@ Hook to retrieve the store client
 
 #### Defined in
 
-[hooks/useClient.tsx:4](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useClient.tsx#L4)
+[hooks/useClient.tsx:4](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useClient.tsx#L4)
 
 ---
 
@@ -370,7 +370,7 @@ the cart properties without the createCheckout function.
 
 #### Defined in
 
-[hooks/useOneClickCheckout.tsx:44](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useOneClickCheckout.tsx#L44)
+[hooks/useOneClickCheckout.tsx:44](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useOneClickCheckout.tsx#L44)
 
 ---
 
@@ -388,7 +388,7 @@ The PayVaultContext properties.
 
 #### Defined in
 
-[components/providers/PayVaultProvider.tsx:48](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/components/providers/PayVaultProvider.tsx#L48)
+[components/providers/PayVaultProvider.tsx:48](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/components/providers/PayVaultProvider.tsx#L48)
 
 ---
 
@@ -413,7 +413,7 @@ An object containing the fetched product and additional query details.
 
 #### Defined in
 
-[hooks/useProducts.tsx:49](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useProducts.tsx#L49)
+[hooks/useProducts.tsx:49](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useProducts.tsx#L49)
 
 ---
 
@@ -439,7 +439,7 @@ An object containing the fetched products and additional query details.
 
 #### Defined in
 
-[hooks/useProducts.tsx:13](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useProducts.tsx#L13)
+[hooks/useProducts.tsx:13](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useProducts.tsx#L13)
 
 ---
 
@@ -455,4 +455,4 @@ Hook to interact with the Store context
 
 #### Defined in
 
-[hooks/useStore.tsx:67](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/hooks/useStore.tsx#L67)
+[hooks/useStore.tsx:67](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useStore.tsx#L67)

@@ -16,7 +16,7 @@ Define which environment to use, defaults to Prod
 
 #### Defined in
 
-[types.ts:4](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L4)
+[types.ts:4](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L4)
 
 ---
 
@@ -26,4 +26,4 @@ Define which environment to use, defaults to Prod
 
 #### Defined in
 
-[types.ts:5](https://github.com/Project-Krypto/ReactPayVault/blob/4db402f/src/lib/types.ts#L5)
+[types.ts:5](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L5)

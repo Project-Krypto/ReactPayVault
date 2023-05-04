@@ -29,7 +29,7 @@ export default function Hero() {
 
           <p className="mt-1 text-sm text-white opacity-50 md:pr-4 md:text-base">
             Supports JavaScript, TypeScript, Rust, Go, Ruby,{' '}
-            <DocLink href="/docs/intro" variant="muted">
+            <DocLink href="/docs/introduction/install" variant="muted">
               and more
             </DocLink>
             .
@@ -37,7 +37,7 @@ export default function Hero() {
 
           <div className="mt-3 flex justify-center md:justify-start">
             <div>
-              <CTA href="/docs/install">
+              <CTA href="/docs/introduction/install">
                 Get started
                 <Icon icon={faRocket} className="ml-1 inline-block md:ml-2" style={{ maxWidth: 18 }} />
               </CTA>
