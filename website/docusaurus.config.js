@@ -116,9 +116,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       algolia: {
-        apiKey: '85bc4947855dcc4a3cce9e5353ad8d5f',
-        appId: 'QV1NZLXEBW',
-        indexName: 'payvault',
+        apiKey: 'b6924a8ff01bbf6510e7ad6925f8b1b5',
+        appId: 'SGT8K9MP1P',
+        indexName: 'payvault-vercel',
       },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
