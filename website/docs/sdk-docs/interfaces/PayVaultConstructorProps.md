@@ -1,7 +1,7 @@
 ---
-id: 'PayVaultConstructorProps'
-title: 'Interface: PayVaultConstructorProps'
-sidebar_label: 'PayVaultConstructorProps'
+id: "PayVaultConstructorProps"
+title: "Interface: PayVaultConstructorProps"
+sidebar_label: "PayVaultConstructorProps"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -14,9 +14,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:10](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L10)
+[types.ts:10](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/types.ts#L10)
 
----
+___
 
 ### endpoint
 
@@ -24,9 +24,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:11](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L11)
+[types.ts:11](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/types.ts#L11)
 
----
+___
 
 ### environment
 
@@ -34,9 +34,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:12](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L12)
+[types.ts:12](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/types.ts#L12)
 
----
+___
 
 ### storeId
 
@@ -44,4 +44,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:9](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L9)
+[types.ts:9](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/types.ts#L9)

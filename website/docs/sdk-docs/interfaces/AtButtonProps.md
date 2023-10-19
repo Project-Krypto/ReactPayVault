@@ -1,7 +1,7 @@
 ---
-id: 'AtButtonProps'
-title: 'Interface: AtButtonProps'
-sidebar_label: 'AtButtonProps'
+id: "AtButtonProps"
+title: "Interface: AtButtonProps"
+sidebar_label: "AtButtonProps"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -20,9 +20,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[components/atoms/at-button/index.tsx:19](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/components/atoms/at-button/index.tsx#L19)
+[components/atoms/at-button/index.tsx:19](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/components/atoms/at-button/index.tsx#L19)
 
----
+___
 
 ### label
 
@@ -30,14 +30,14 @@ custom_edit_url: null
 
 #### Defined in
 
-[components/atoms/at-button/index.tsx:17](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/components/atoms/at-button/index.tsx#L17)
+[components/atoms/at-button/index.tsx:17](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/components/atoms/at-button/index.tsx#L17)
 
----
+___
 
 ### variant
 
-• `Optional` **variant**: `"PRIMARY"` \| `"SECONDARY"` \| `"TERTIARY"`
+• `Optional` **variant**: ``"PRIMARY"`` \| ``"SECONDARY"`` \| ``"TERTIARY"``
 
 #### Defined in
 
-[components/atoms/at-button/index.tsx:18](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/components/atoms/at-button/index.tsx#L18)
+[components/atoms/at-button/index.tsx:18](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/components/atoms/at-button/index.tsx#L18)

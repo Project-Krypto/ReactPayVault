@@ -1,7 +1,7 @@
 ---
-id: 'PayVaultContextProps'
-title: 'Interface: PayVaultContextProps'
-sidebar_label: 'PayVaultContextProps'
+id: "PayVaultContextProps"
+title: "Interface: PayVaultContextProps"
+sidebar_label: "PayVaultContextProps"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -14,4 +14,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[components/providers/PayVaultProvider.tsx:25](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/components/providers/PayVaultProvider.tsx#L25)
+[components/providers/PayVaultProvider.tsx:25](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/components/providers/PayVaultProvider.tsx#L25)

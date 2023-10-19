@@ -1,7 +1,7 @@
 ---
-id: 'OneClickCheckoutProps'
-title: 'Interface: OneClickCheckoutProps'
-sidebar_label: 'OneClickCheckoutProps'
+id: "OneClickCheckoutProps"
+title: "Interface: OneClickCheckoutProps"
+sidebar_label: "OneClickCheckoutProps"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -18,9 +18,9 @@ The ID of the product.
 
 #### Defined in
 
-[hooks/useOneClickCheckout.tsx:12](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useOneClickCheckout.tsx#L12)
+[hooks/useOneClickCheckout.tsx:12](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useOneClickCheckout.tsx#L12)
 
----
+___
 
 ### quantity
 
@@ -30,9 +30,9 @@ The quantity of the product to be added to the cart. Defaults to 1.
 
 #### Defined in
 
-[hooks/useOneClickCheckout.tsx:17](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useOneClickCheckout.tsx#L17)
+[hooks/useOneClickCheckout.tsx:17](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useOneClickCheckout.tsx#L17)
 
----
+___
 
 ### redirect
 
@@ -43,4 +43,4 @@ after adding the product. Defaults to true.
 
 #### Defined in
 
-[hooks/useOneClickCheckout.tsx:23](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useOneClickCheckout.tsx#L23)
+[hooks/useOneClickCheckout.tsx:23](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useOneClickCheckout.tsx#L23)

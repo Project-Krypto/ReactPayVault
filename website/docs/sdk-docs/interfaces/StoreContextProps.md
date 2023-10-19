@@ -1,7 +1,7 @@
 ---
-id: 'StoreContextProps'
-title: 'Interface: StoreContextProps'
-sidebar_label: 'StoreContextProps'
+id: "StoreContextProps"
+title: "Interface: StoreContextProps"
+sidebar_label: "StoreContextProps"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -18,9 +18,9 @@ The PayVault client instance used to interact with the PayVault API.
 
 #### Defined in
 
-[hooks/useStore.tsx:25](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useStore.tsx#L25)
+[hooks/useStore.tsx:25](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useStore.tsx#L25)
 
----
+___
 
 ### refresh
 
@@ -38,9 +38,9 @@ A function to refresh the store information.
 
 #### Defined in
 
-[hooks/useStore.tsx:30](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useStore.tsx#L30)
+[hooks/useStore.tsx:30](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useStore.tsx#L30)
 
----
+___
 
 ### storeDetails
 
@@ -50,9 +50,9 @@ An optional StoreDetails object containing information about the store.
 
 #### Defined in
 
-[hooks/useStore.tsx:15](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useStore.tsx#L15)
+[hooks/useStore.tsx:15](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useStore.tsx#L15)
 
----
+___
 
 ### storeId
 
@@ -62,9 +62,9 @@ The unique identifier of the store as a string.
 
 #### Defined in
 
-[hooks/useStore.tsx:20](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useStore.tsx#L20)
+[hooks/useStore.tsx:20](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useStore.tsx#L20)
 
----
+___
 
 ### updateLogo
 
@@ -78,8 +78,8 @@ A function to update the store logo.
 
 ##### Parameters
 
-| Name   | Type  | Description                       |
-| :----- | :---- | :-------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `file` | `any` | The new logo file to be uploaded. |
 
 ##### Returns
@@ -88,9 +88,9 @@ A function to update the store logo.
 
 #### Defined in
 
-[hooks/useStore.tsx:42](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useStore.tsx#L42)
+[hooks/useStore.tsx:42](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useStore.tsx#L42)
 
----
+___
 
 ### updateStoreInfo
 
@@ -104,8 +104,8 @@ A function to update the store information.
 
 ##### Parameters
 
-| Name           | Type                                          | Description                                                 |
-| :------------- | :-------------------------------------------- | :---------------------------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `storeDetails` | [`StoreDetailsUpdate`](StoreDetailsUpdate.md) | An object containing the fields to be updated in the store. |
 
 ##### Returns
@@ -114,4 +114,4 @@ A function to update the store information.
 
 #### Defined in
 
-[hooks/useStore.tsx:36](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useStore.tsx#L36)
+[hooks/useStore.tsx:36](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useStore.tsx#L36)

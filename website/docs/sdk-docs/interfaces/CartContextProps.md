@@ -1,7 +1,7 @@
 ---
-id: 'CartContextProps'
-title: 'Interface: CartContextProps'
-sidebar_label: 'CartContextProps'
+id: "CartContextProps"
+title: "Interface: CartContextProps"
+sidebar_label: "CartContextProps"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -24,8 +24,8 @@ and adds the item to the shopping cart.
 
 ##### Parameters
 
-| Name   | Type                      |
-| :----- | :------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `item` | [`CartItem`](CartItem.md) |
 
 ##### Returns
@@ -34,9 +34,9 @@ and adds the item to the shopping cart.
 
 #### Defined in
 
-[hooks/useCart.tsx:23](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useCart.tsx#L23)
+[hooks/useCart.tsx:23](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useCart.tsx#L23)
 
----
+___
 
 ### cartId
 
@@ -47,9 +47,9 @@ or undefined if the cart has not been created yet.
 
 #### Defined in
 
-[hooks/useCart.tsx:47](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useCart.tsx#L47)
+[hooks/useCart.tsx:47](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useCart.tsx#L47)
 
----
+___
 
 ### cartItems
 
@@ -60,9 +60,9 @@ in the shopping cart.
 
 #### Defined in
 
-[hooks/useCart.tsx:17](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useCart.tsx#L17)
+[hooks/useCart.tsx:17](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useCart.tsx#L17)
 
----
+___
 
 ### cartLink
 
@@ -73,9 +73,9 @@ page, or undefined if the cart has not been created yet.
 
 #### Defined in
 
-[hooks/useCart.tsx:53](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useCart.tsx#L53)
+[hooks/useCart.tsx:53](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useCart.tsx#L53)
 
----
+___
 
 ### createCheckout
 
@@ -94,9 +94,9 @@ the shopping cart.
 
 #### Defined in
 
-[hooks/useCart.tsx:35](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useCart.tsx#L35)
+[hooks/useCart.tsx:35](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useCart.tsx#L35)
 
----
+___
 
 ### isLoading
 
@@ -107,9 +107,9 @@ being loaded or modified.
 
 #### Defined in
 
-[hooks/useCart.tsx:41](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useCart.tsx#L41)
+[hooks/useCart.tsx:41](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useCart.tsx#L41)
 
----
+___
 
 ### removeFromCart
 
@@ -124,8 +124,8 @@ and removes the corresponding item from the shopping cart.
 
 ##### Parameters
 
-| Name | Type     |
-| :--- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `id` | `number` |
 
 ##### Returns
@@ -134,9 +134,9 @@ and removes the corresponding item from the shopping cart.
 
 #### Defined in
 
-[hooks/useCart.tsx:29](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useCart.tsx#L29)
+[hooks/useCart.tsx:29](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useCart.tsx#L29)
 
----
+___
 
 ### totalCost
 
@@ -146,4 +146,4 @@ Total cost of everything in the cart, in USDC
 
 #### Defined in
 
-[hooks/useCart.tsx:58](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useCart.tsx#L58)
+[hooks/useCart.tsx:58](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useCart.tsx#L58)

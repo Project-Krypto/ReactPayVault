@@ -2,7 +2,7 @@ import { PayVaultConstructorProps, PayVaultStoreProvider } from '@/index'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import React, { createContext, useContext } from 'react'
 
-import ReactDOM from 'react-dom'
+// import ReactDOM from 'react-dom'
 
 import { PayVault } from '../../PayVault'
 

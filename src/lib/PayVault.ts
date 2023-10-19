@@ -27,12 +27,12 @@ export class PayVault {
    * @param apiKey - The API key used to authenticate with the PayVault API.
    * @param storeId - The unique identifier of the store.
    * @param endpoint - The API endpoint to use, defaults to Endpoints.Local.
-   * @param other - Other configuration properties.
+   * @param environment - Payvault environment.
    */
-  constructor({ apiKey, storeId, endpoint = Endpoints.Local, ...other }: PayVaultConstructorProps) {
+  constructor({ apiKey, storeId, endpoint = Endpoints.Local, environment = Environment.Dev }: PayVaultConstructorProps) {
     this.apiKey = apiKey
     this.storeId = storeId
-    this.env = Environment.Dev
+    this.env = environment
     this.endpoint = endpoint
   }
 
@@ -69,9 +69,9 @@ export class PayVault {
    * @param path - The path of the API endpoint.
    * @param options - The options for the fetch request.
    */
-
   async uploadFile(path: string, options: RequestInit = {}) {
     const endpoint = `http://${this.endpoint}${path}`
+    console.debug(`Uploading file to ${endpoint}`)
     return await (
       await fetch(endpoint, {
         method: 'POST',
@@ -115,6 +115,18 @@ export class PayVault {
   async updateStoreInfo(storeDetails: StoreDetailsUpdate): Promise<StoreDetails> {
     return await this.requestJson(`/api/store/${this.storeId}`, {
       method: 'POST',
+      body: JSON.stringify(storeDetails),
+    })
+  }
+ 
+  /**
+   * Create a store using the provided details.
+   * @param storeDetails - A partial object containing the store details used in creation.
+   * @returns {Promise<StoreDetails>} A promise that resolves to the updated store details.
+   */
+  async createStore(storeDetails: { name: string; description: string }): Promise<StoreDetails> {
+    return await this.requestJson(`/api/store`, {
+      method: 'PUT',
       body: JSON.stringify(storeDetails),
     })
   }
@@ -249,6 +261,7 @@ export class PayVault {
   async createApiKey(): Promise<ApiKey> {
     return await this.requestJson(`/api/store/${this.storeId}/apiKey/`, {
       method: 'PUT',
+      //TODO: Add choice for Admin or Checkout api key
       // body: JSON.stringify(productDetails),
     })
   }

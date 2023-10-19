@@ -1,7 +1,7 @@
 ---
-id: 'CreateApiKeyRequest'
-title: 'Interface: CreateApiKeyRequest'
-sidebar_label: 'CreateApiKeyRequest'
+id: "CreateApiKeyRequest"
+title: "Interface: CreateApiKeyRequest"
+sidebar_label: "CreateApiKeyRequest"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -14,4 +14,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:56](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L56)
+[types.ts:56](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/types.ts#L56)

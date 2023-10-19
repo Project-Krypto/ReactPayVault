@@ -1,7 +1,7 @@
 ---
-id: 'CartItem'
-title: 'Interface: CartItem'
-sidebar_label: 'CartItem'
+id: "CartItem"
+title: "Interface: CartItem"
+sidebar_label: "CartItem"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -14,9 +14,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:21](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L21)
+[types.ts:21](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/types.ts#L21)
 
----
+___
 
 ### productId
 
@@ -24,4 +24,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:19](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L19)
+[types.ts:19](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/types.ts#L19)

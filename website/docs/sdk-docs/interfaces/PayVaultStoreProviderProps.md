@@ -1,7 +1,7 @@
 ---
-id: 'PayVaultStoreProviderProps'
-title: 'Interface: PayVaultStoreProviderProps'
-sidebar_label: 'PayVaultStoreProviderProps'
+id: "PayVaultStoreProviderProps"
+title: "Interface: PayVaultStoreProviderProps"
+sidebar_label: "PayVaultStoreProviderProps"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -18,9 +18,9 @@ The children elements to render within the PayVaultStoreProvider component.
 
 #### Defined in
 
-[hooks/useStore.tsx:52](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useStore.tsx#L52)
+[hooks/useStore.tsx:52](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useStore.tsx#L52)
 
----
+___
 
 ### client
 
@@ -30,4 +30,4 @@ The PayVault client instance or the constructor properties to create a new PayVa
 
 #### Defined in
 
-[hooks/useStore.tsx:57](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useStore.tsx#L57)
+[hooks/useStore.tsx:57](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useStore.tsx#L57)

@@ -1,7 +1,7 @@
 ---
-id: 'ApiKey'
-title: 'Interface: ApiKey'
-sidebar_label: 'ApiKey'
+id: "ApiKey"
+title: "Interface: ApiKey"
+sidebar_label: "ApiKey"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -14,9 +14,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:48](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L48)
+[types.ts:48](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/types.ts#L48)
 
----
+___
 
 ### key
 
@@ -24,9 +24,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:49](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L49)
+[types.ts:49](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/types.ts#L49)
 
----
+___
 
 ### name
 
@@ -34,9 +34,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:50](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L50)
+[types.ts:50](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/types.ts#L50)
 
----
+___
 
 ### revenue
 
@@ -44,9 +44,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:53](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L53)
+[types.ts:53](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/types.ts#L53)
 
----
+___
 
 ### storeId
 
@@ -54,9 +54,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:52](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L52)
+[types.ts:52](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/types.ts#L52)
 
----
+___
 
 ### type
 
@@ -64,4 +64,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[types.ts:51](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L51)
+[types.ts:51](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/types.ts#L51)

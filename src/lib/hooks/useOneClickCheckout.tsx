@@ -1,3 +1,4 @@
+import * as React from 'react'
 import { useCallback, useEffect } from 'react'
 
 import { CartContextProps, useCart } from './useCart'
@@ -53,11 +54,11 @@ export const useOneClickCheckout = ({
     createCheckout()
   }, [productId, quantity])
 
-  useEffect(() => {
-    if (cart.cartId === undefined || cart.cartLink === undefined) return
-    if (redirect === false) return
-    window.open(cart.cartLink, '_blank')
-  }, [cart.cartLink, cart.cartId])
+  // useEffect(() => {
+  //   if (cart.cartId === undefined || cart.cartLink === undefined) return
+  //   if (redirect === false) return
+  //   window.open(cart.cartLink, '_blank')
+  // }, [cart.cartLink, cart.cartId])
 
   return {
     triggerCheckout,

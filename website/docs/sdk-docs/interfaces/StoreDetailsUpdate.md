@@ -1,14 +1,14 @@
 ---
-id: 'StoreDetailsUpdate'
-title: 'Interface: StoreDetailsUpdate'
-sidebar_label: 'StoreDetailsUpdate'
+id: "StoreDetailsUpdate"
+title: "Interface: StoreDetailsUpdate"
+sidebar_label: "StoreDetailsUpdate"
 sidebar_position: 0
 custom_edit_url: null
 ---
 
 ## Hierarchy
 
-- `Partial`<`Pick`<[`StoreDetails`](../#storedetails), `"name"` \| `"logoUrl"` \| `"description"`\>\>
+- `Partial`<`Pick`<[`StoreDetails`](../#storedetails), ``"name"`` \| ``"logoUrl"`` \| ``"description"``\>\>
 
   ↳ **`StoreDetailsUpdate`**
 
@@ -24,13 +24,13 @@ Partial.description
 
 #### Defined in
 
-[types.ts:75](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L75)
+[types.ts:75](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/types.ts#L75)
 
----
+___
 
 ### logoUrl
 
-• `Optional` **logoUrl**: `null` \| `string`
+• `Optional` **logoUrl**: ``null`` \| `string`
 
 #### Inherited from
 
@@ -38,9 +38,9 @@ Partial.logoUrl
 
 #### Defined in
 
-[types.ts:74](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L74)
+[types.ts:74](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/types.ts#L74)
 
----
+___
 
 ### name
 
@@ -52,4 +52,4 @@ Partial.name
 
 #### Defined in
 
-[types.ts:73](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/types.ts#L73)
+[types.ts:73](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/types.ts#L73)

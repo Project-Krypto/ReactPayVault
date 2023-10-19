@@ -1,5 +1,5 @@
 import { useMutation, useQuery } from '@tanstack/react-query'
-import React, { createContext, useContext, useMemo } from 'react'
+import React, { createContext, useContext, useMemo, useState } from 'react'
 
 import { PayVaultCartProvider } from './useCart'
 import { PayVault } from '../PayVault'
@@ -40,6 +40,8 @@ export interface StoreContextProps {
    * @param file - The new logo file to be uploaded.
    */
   updateLogo: (file: File | File[] | any) => void
+
+  updateStoreId: (storeId: string) => void
 }
 
 /**
@@ -79,16 +81,20 @@ export const PayVaultStoreProvider = ({
   children: React.ReactNode
   client: PayVaultConstructorProps | PayVault
 }) => {
+  const [storeId, setStoreId] = useState<string>('');
   const vaultClient = useMemo(() => {
+    setStoreId(client.storeId);
     if (client instanceof PayVault) {
       return client
     }
     return new PayVault(client)
   }, [client])
 
-  // Fetch the store details.
 
+
+  // Fetch the store details.
   const { data, refetch } = useQuery({
+    queryKey: ['storeDetails', vaultClient, storeId],
     queryFn: async () => {
       const retrieveStoreResponse = await vaultClient.getStoreInfo()
       console.log(retrieveStoreResponse)
@@ -126,12 +132,13 @@ export const PayVaultStoreProvider = ({
   return (
     <StoreContext.Provider
       value={{
-        storeId: vaultClient.storeId,
+        storeId: storeId,
         storeDetails: data,
         client: vaultClient,
         refresh: refetch,
         updateStoreInfo,
         updateLogo,
+        updateStoreId: setStoreId,
       }}
     >
       <PayVaultCartProvider client={vaultClient}>{children}</PayVaultCartProvider>

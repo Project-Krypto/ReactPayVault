@@ -1,7 +1,7 @@
 ---
-id: 'UseOneClickCheckoutResponse'
-title: 'Interface: UseOneClickCheckoutResponse'
-sidebar_label: 'UseOneClickCheckoutResponse'
+id: "UseOneClickCheckoutResponse"
+title: "Interface: UseOneClickCheckoutResponse"
+sidebar_label: "UseOneClickCheckoutResponse"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -10,7 +10,7 @@ Interface representing the response of the useOneClickCheckout hook.
 
 ## Hierarchy
 
-- `Omit`<[`CartContextProps`](CartContextProps.md), `"createCheckout"`\>
+- `Omit`<[`CartContextProps`](CartContextProps.md), ``"createCheckout"``\>
 
   ↳ **`UseOneClickCheckoutResponse`**
 
@@ -29,8 +29,8 @@ and adds the item to the shopping cart.
 
 ##### Parameters
 
-| Name   | Type                      |
-| :----- | :------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `item` | [`CartItem`](CartItem.md) |
 
 ##### Returns
@@ -43,9 +43,9 @@ Omit.addToCart
 
 #### Defined in
 
-[hooks/useCart.tsx:23](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useCart.tsx#L23)
+[hooks/useCart.tsx:23](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useCart.tsx#L23)
 
----
+___
 
 ### cartId
 
@@ -60,9 +60,9 @@ Omit.cartId
 
 #### Defined in
 
-[hooks/useCart.tsx:47](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useCart.tsx#L47)
+[hooks/useCart.tsx:47](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useCart.tsx#L47)
 
----
+___
 
 ### cartItems
 
@@ -77,9 +77,9 @@ Omit.cartItems
 
 #### Defined in
 
-[hooks/useCart.tsx:17](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useCart.tsx#L17)
+[hooks/useCart.tsx:17](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useCart.tsx#L17)
 
----
+___
 
 ### cartLink
 
@@ -94,9 +94,9 @@ Omit.cartLink
 
 #### Defined in
 
-[hooks/useCart.tsx:53](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useCart.tsx#L53)
+[hooks/useCart.tsx:53](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useCart.tsx#L53)
 
----
+___
 
 ### isLoading
 
@@ -111,9 +111,9 @@ Omit.isLoading
 
 #### Defined in
 
-[hooks/useCart.tsx:41](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useCart.tsx#L41)
+[hooks/useCart.tsx:41](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useCart.tsx#L41)
 
----
+___
 
 ### removeFromCart
 
@@ -128,8 +128,8 @@ and removes the corresponding item from the shopping cart.
 
 ##### Parameters
 
-| Name | Type     |
-| :--- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `id` | `number` |
 
 ##### Returns
@@ -142,9 +142,9 @@ Omit.removeFromCart
 
 #### Defined in
 
-[hooks/useCart.tsx:29](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useCart.tsx#L29)
+[hooks/useCart.tsx:29](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useCart.tsx#L29)
 
----
+___
 
 ### totalCost
 
@@ -158,9 +158,9 @@ Omit.totalCost
 
 #### Defined in
 
-[hooks/useCart.tsx:58](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useCart.tsx#L58)
+[hooks/useCart.tsx:58](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useCart.tsx#L58)
 
----
+___
 
 ### triggerCheckout
 
@@ -178,4 +178,4 @@ A function that triggers the checkout process.
 
 #### Defined in
 
-[hooks/useOneClickCheckout.tsx:33](https://github.com/Project-Krypto/ReactPayVault/blob/208ee24/src/lib/hooks/useOneClickCheckout.tsx#L33)
+[hooks/useOneClickCheckout.tsx:33](https://github.com/Project-Krypto/ReactPayVault/blob/ca186c4/src/lib/hooks/useOneClickCheckout.tsx#L33)
